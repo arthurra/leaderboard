@@ -1,0 +1,28 @@
+// ---------------------------------- \\
+//              LAYOUT                \\
+// ---------------------------------- \\
+
+.leaderboard {
+  grid-area: leaderboard;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "total teams";
+}
+
+.leaderboard__total {
+  grid-area: total;
+}
+
+.leaderboard__teams {
+  grid-area: teams;
+}
+
+
+// ---------------------------------- \\
+//              DISPLAY               \\
+// ---------------------------------- \\
+
+.leaderboard {
+  @extend %panel;
+  padding: $padding;
+}
