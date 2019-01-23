@@ -10,25 +10,25 @@ $light-gray: #EAECEF;
 $lighter-gray: #F5F5F5;
 $near-white: #FCFCFC;
 
-$sg-pink: #FF7A67;
-$sg-fuchsia: #CC74B7;
-$sg-purple: #977FD2;
-$sg-blue: #2c97de;
-$sg-navy: #2f6f9f;
-$sg-aqua: #00C9BC;
-$sg-teal: #099;
-$sg-green: #39C46C;
-$sg-yellow: #fdbb37;
-$sg-orange: #E87E4B;
-$sg-red: #D63A3A;
+$lb-pink: #FF7A67;
+$lb-fuchsia: #CC74B7;
+$lb-purple: #977FD2;
+$lb-blue: #2c97de;
+$lb-navy: #2f6f9f;
+$lb-aqua: #00C9BC;
+$lb-teal: #099;
+$lb-green: #39C46C;
+$lb-yellow: #fdbb37;
+$lb-orange: #E87E4B;
+$lb-red: #D63A3A;
 
-$color-danger: $sg-red;
-$color-warning: $sg-yellow;
-$color-success: $sg-green;
-$color-info: $sg-blue;
+$color-danger: $lb-red;
+$color-warning: $lb-yellow;
+$color-success: $lb-green;
+$color-info: $lb-blue;
 
-$color-primary: $sg-navy;
-$color-secondary: $sg-blue;
+$color-primary: $lb-navy;
+$color-secondary: $lb-blue;
 
 $input-background-color: $near-white;
 $nav-background-color: lighten($lighter-gray, 2%);
@@ -64,10 +64,13 @@ $padding: 1rem;
 $half-padding: $padding / 2;
 $quarter-padding: $half-padding / 2;
 
-$dark-border: 1px solid $dark-gray;
-$border: 1px solid $gray;
-$light-border: 1px solid $light-gray;
-$border-radius: 2px;
+$border-width: 2px;
+$border-style: solid;
+
+$dark-border: $border-width $border-style $dark-gray;
+$border: $border-width $border-style $gray;
+$light-border: $border-width $border-style $light-gray;
+$border-radius: 4px;
 
 $box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 $dark-box-shadow: 0 2px 5px rgba(0,0,0,0.2);
