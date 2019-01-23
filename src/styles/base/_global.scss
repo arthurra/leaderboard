@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: $p;
+  font-size: $base-font-size;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-variant-ligatures: common-ligatures contextual;
+  font-variant-alternates: styleset(ss01) character-variant(cv08);
+  font-variant-numeric: diagonal-fractions;
+  font-kerning: normal;
+  font-feature-settings: "calt" 1, "tnum" 0, "frac" 1, "case" 1, "ss01" 1, "cv08" 1, "kern" 1, "liga" 1;
+  color: $text-color;
+}
+
+body.show-grid {
+  @include grid-lines;
+}
+
+header,
+aside,
+main,
+footer {
+  padding: $padding;
+}
+
+header {
+  border-bottom: $border;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  position: relative;
+  transition: color $transition-duration $smooth-ease;
+
+  &:hover {
+    color: $color-primary;
+    text-decoration: underline;
+  }
+}
+
+label {
+  display: inline-block;
+  font: $label;
+  letter-spacing: 0.01em;
+}
+
+ol, ul {
+  padding-left: $padding;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+
+li {
+  font: $p;
+}
+
+section {
+  padding-bottom: $padding;
+
+  & + & {
+    border-top: $border;
+  }
+}
+
+code {
+  border: $border;
+  background-color: $lighter-gray;
+  padding: ($quarter-padding / 2) $quarter-padding;
+  border-radius: $border-radius;
+  font-family: monospace;
+  font-size: 87.5%;
+  line-height: 1;
+  white-space: pre;
+  vertical-align: middle;
+}

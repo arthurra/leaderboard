@@ -1,0 +1,74 @@
+// ---------------------------------- \\
+//              LAYOUT                \\
+// ---------------------------------- \\
+
+.panel {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "body"
+    "footer";
+}
+
+.panel__header {
+  grid-area: header;
+}
+
+.panel__body {
+  grid-area: body;
+}
+
+.panel__footer {
+  grid-area: footer;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  grid-gap: $padding;
+  justify-content: start;
+  justify-items: start;
+}
+
+
+// ---------------------------------- \\
+//            PLACEHOLDER             \\
+// ---------------------------------- \\
+
+%panel {
+  font: $p;
+  background-color: $near-white;
+  border: $border;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+
+
+// ---------------------------------- \\
+//              DISPLAY               \\
+// ---------------------------------- \\
+
+.panel {
+  @extend %panel;
+  margin-bottom: calc(#{$padding} - 1px);
+}
+
+.panel__header {
+  padding: $padding;
+  background-color: $lighter-gray;
+  border-bottom: $border;
+}
+
+.panel__title {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.panel__body {
+  padding: ($padding * 1.5) $padding;
+}
+
+.panel__footer {
+  padding: $half-padding $padding;
+  background-color: $lighter-gray;
+  border-top: $border;
+}

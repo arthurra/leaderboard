@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <title> Style Guide </title>
+
+  <script defer src="https://pro.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-DtPgXIYsUR6lLmJK14ZNUi11aAoezQtw4ut26Zwy9/6QXHH8W3+gjrRDT+lHiiW4" crossorigin="anonymous"></script>
+</head>
+
+<body id="top">
+  <header>
+    <h1> Project Boilerplate </h1>
+    <p> A base style guide of UI elements for starting new projects. </p>
+  </header>
+  <aside>
+    <nav class="list-group">
+      <a href="#colors" class="list-group__item"> Colors </a>
+      <a href="#typography" class="list-group__item"> Typography </a>
+      <a href="#forms" class="list-group__item"> Forms </a>
+      <a href="#buttons" class="list-group__item"> Buttons </a>
+      <a href="#tables" class="list-group__item"> Tables </a>
+      <a href="#panels" class="list-group__item"> Panels </a>
+      <a href="#lists" class="list-group__item"> Lists </a>
+    </nav>
+  </aside>
+  <main>
+
+    <button onclick="toggleGrid()" id="grid-toggle" class="button button--icon" data-show="false">
+      <span class="button__icon hidden">
+        <i class="far fa-eye-slash"></i>
+      </span>
+      <span class="button__icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="button__icon-label"> Grid </span>
+    </button>
+
+    <script type="text/javascript">
+      let body = document.querySelector('body');
+      let toggleButtonIcons = document.querySelectorAll('#grid-toggle .button__icon')
+
+      function toggleGrid() {
+        body.classList.toggle('show-grid');
+        for (var icon of toggleButtonIcons) {
+          icon.classList.toggle('hidden');
+        }
+      };
+    </script>
+
+
+    <!-- //==========================// -->
+    <!-- //          COLORS          // -->
+    <!-- //==========================// -->
+
+    <section id="colors">
+      <h1 class="u-pt0"> Colors </h1>
+
+      <!-- <div class="grid">
+        <div>
+          <h3> State Colors </h3>
+          <div class="list-group">
+            <div class="list-group__item">
+              <div class="grid">
+                <span class="paint-chip paint-chip--primary"></span>
+                <div>
+                  <div> Primary Color </div>
+                  <div> #000000 </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="list-group__item">
+              <div> Secondary Color </div>
+              <span class="paint-chip paint-chip--secondary"></span>
+            </div>
+            <div class="list-group__item">
+              <div> Success Color </div>
+              <span class="paint-chip paint-chip--success"></span>
+            </div>
+            <div class="list-group__item">
+              <div> Warning Color </div>
+              <span class="paint-chip paint-chip--warning"></span>
+            </div>
+            <div class="list-group__item">
+              <div> Danger Color </div>
+              <span class="paint-chip paint-chip--danger"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3> Grayscale Colors </h3>
+          <div class="list-group">
+            <div class="list-group__item">
+              <div> Primary Color </div>
+              <span class="paint-chip paint-chip--near-white"></span>
+            </div>
+            <div class="list-group__item">
+              <div> Secondary Color </div>
+              <span class="paint-chip paint-chip--lighter-gray"></span>
+            </div>
+            <div class="list-group__item">
+              <div> Success Color </div>
+              <span class="paint-chip paint-chip--light-gray"></span>
+            </div>
+            <div class="list-group__item">
+              <div> Warning Color </div>
+              <span class="paint-chip paint-chip--gray"></span>
+            </div>
+            <div class="list-group__item">
+              <div> Danger Color </div>
+              <span class="paint-chip paint-chip--dark-gray"></span>
+            </div>
+            <div class="list-group__item">
+              <div> Danger Color </div>
+              <span class="paint-chip paint-chip--darker-gray"></span>
+            </div>
+            <div class="list-group__item">
+              <div> Danger Color </div>
+              <span class="paint-chip paint-chip--black"></span>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="grid">
+        <div>
+          <h3> State Colors </h3>
+
+          <div class="paint-chip paint-chip--primary">
+            <div class="paint-chip__color"> </div>
+            <span class="paint-chip__title"> Primary Color </span>
+            <span class="paint-chip__values">
+              <span> #2F6F9F </span>
+              <span> $color-primary </span>
+            </span>
+          </div>
+
+          <div class="paint-chip paint-chip--secondary">
+            <div class="paint-chip__color"> </div>
+            <span class="paint-chip__title"> Secondary Color </span>
+            <span class="paint-chip__values">
+              <span> #2C97DE </span>
+              <span> $color-secondary </span>
+            </span>
+          </div>
+
+          <div class="paint-chip paint-chip--success">
+            <div class="paint-chip__color"> </div>
+            <span class="paint-chip__title"> Success Color </span>
+            <span class="paint-chip__values">
+              <span> #39C46C </span>
+              <span> $color-success </span>
+            </span>
+          </div>
+
+          <div class="paint-chip paint-chip--warning">
+            <div class="paint-chip__color"> </div>
+            <span class="paint-chip__title"> Warning Color </span>
+            <span class="paint-chip__values">
+              <span> #FDBB37 </span>
+              <span> $color-warning </span>
+            </span>
+          </div>
+
+          <div class="paint-chip paint-chip--danger">
+            <div class="paint-chip__color"> </div>
+            <span class="paint-chip__title"> Danger Color </span>
+            <span class="paint-chip__values">
+              <span> #D63A3A </span>
+              <span> $color-danger </span>
+            </span>
+          </div>
+
+          <div class="paint-chip paint-chip--info">
+            <div class="paint-chip__color"> </div>
+            <span class="paint-chip__title"> Info Color </span>
+            <span class="paint-chip__values">
+              <span> #2C97DE </span>
+              <span> $color-info </span>
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <h3> Grayscale Colors </h3>
+
+          <div class="paint-chip paint-chip--lighter-gray">
+            <div class="paint-chip__color"> </div>
+            <span class="paint-chip__title"> Lighter Gray </span>
+            <span class="paint-chip__values">
+              <span> #F5F5F5 </span>
+              <span> $lighter-gray </span>
+            </span>
+          </div>
+
+          <div class="paint-chip paint-chip--light-gray">
+            <div class="paint-chip__color"> </div>
+            <span class="paint-chip__title"> Light Gray </span>
+            <span class="paint-chip__values">
+              <span> #EAECEF </span>
+              <span> $light-gray </span>
+            </span>
+          </div>
+
+          <div class="paint-chip paint-chip--gray">
+            <div class="paint-chip__color"> </div>
+            <span class="paint-chip__title"> Gray </span>
+            <span class="paint-chip__values">
+              <span> #CFD8DC </span>
+              <span> $gray </span>
+            </span>
+          </div>
+
+          <div class="paint-chip paint-chip--dark-gray">
+            <div class="paint-chip__color"> </div>
+            <span class="paint-chip__title"> Dark Gray </span>
+            <span class="paint-chip__values">
+              <span> #78909C </span>
+              <span> $dark-gray </span>
+            </span>
+          </div>
+
+          <div class="paint-chip paint-chip--darker-gray">
+            <div class="paint-chip__color"> </div>
+            <span class="paint-chip__title"> Darker Gray </span>
+            <span class="paint-chip__values">
+              <span> #5A6779 </span>
+              <span> $darker-gray </span>
+            </span>
+          </div>
+
+          <div class="paint-chip paint-chip--black">
+            <div class="paint-chip__color"> </div>
+            <span class="paint-chip__title"> Black </span>
+            <span class="paint-chip__values">
+              <span> #37474F </span>
+              <span> $black </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- //==========================// -->
+    <!-- //        TYPOGRAPHY        // -->
+    <!-- //==========================// -->
+
+    <section id="typography">
+      <h1> Typography </h1>
+      <p> Base typographic elements and vertical rhythm. </p>
+      <h1>Heading 1: Inter UI Bold 30px</h1>
+      <p>Inter UI Regular 14px. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="#">Duis aute irure dolor</a> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <h2>Heading 2: Inter UI Regular 20px</h2>
+      <p>Inter UI Regular 14px. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <h3>Heading 3: Inter UI Bold 14px</h3>
+      <p>Inter UI Regular 14px. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <h4>Heading 4: Inter UI Regular 16px</h4>
+      <p>Inter UI Regular 14px. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <h5>Heading 5: Inter UI Bold 12px</h5>
+      <p>Inter UI Regular 14px. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <h6>Heading 6: Inter UI RegularItalic 12px</h6>
+      <p>Inter UI Regular 14px. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <!-- //==========================// -->
+    <!-- //          FORMS           // -->
+    <!-- //==========================// -->
+
+    <section id="forms">
+      <h1> Forms </h1>
+      <p>Forms are made up of three main components - a <code>form</code> element, form controls (text inputs, checkboxes, radio buttons), and form actions that include a submit button and sometimes a cancel button.</p>
+
+      <h3> Text Inputs </h3>
+      <p> Text based input fields are the most common type of form control. For full support, every text field should have its <code>type</code> set. </p>
+      <div class="grid-columns">
+        <!-- BASIC -->
+        <div class="form-group">
+          <input class="form-group__input" type="text" name="" value="" placeholder="Text input">
+        </div>
+        <div class="form-group">
+          <input class="form-group__input form-group__input--icon-l" type="text" name="" value="" placeholder="Text input">
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-user-alt"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-group__input form-group__input--icon-r required" type="text" name="" value="" placeholder="Text input" required>
+          <div class="form-group__input-icon form-group__input-icon--right  form-group__input-icon--required has-tooltip" aria-label="Required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-group__input form-group__input--icon-lr required" type="text" name="" value="" placeholder="Text input" required>
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <div class="form-group__input-icon form-group__input-icon--right   form-group__input-icon--required has-tooltip" aria-label="Required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+        </div>
+
+        <!-- HOVER -->
+        <div class="form-group">
+          <input class="form-group__input form-group__input--hover" type="text" name="" value="" placeholder="Hover text input">
+        </div>
+        <div class="form-group">
+          <input class="form-group__input form-group__input--icon-l form-group__input--hover" type="text" name="" value="" placeholder="Hover text input">
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-user-alt"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-group__input form-group__input--icon-r form-group__input--hover required" type="text" name="" value="" placeholder="Hover text input" required>
+          <div class="form-group__input-icon form-group__input-icon--right   form-group__input-icon--required has-tooltip" aria-label="Required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-group__input form-group__input--icon-lr form-group__input--hover required" type="text" name="" value="" placeholder="Hover text input" required>
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <div class="form-group__input-icon form-group__input-icon--right   form-group__input-icon--required has-tooltip" aria-label="Required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+        </div>
+
+        <!-- FOCUS -->
+        <div class="form-group">
+          <input class="form-group__input form-group__input--focus" type="text" name="" value="" placeholder="Focus text input">
+        </div>
+        <div class="form-group">
+          <input class="form-group__input form-group__input--icon-l form-group__input--focus" type="text" name="" value="" placeholder="Focus text input">
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-user-alt"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-group__input form-group__input--icon-r form-group__input--focus required" type="text" name="" value="" placeholder="Focus text input" required>
+          <div class="form-group__input-icon form-group__input-icon--right   form-group__input-icon--required has-tooltip" aria-label="Required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-group__input form-group__input--icon-lr form-group__input--focus required" type="text" name="" value="" placeholder="Focus text input" required>
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <div class="form-group__input-icon form-group__input-icon--right   form-group__input-icon--required has-tooltip" aria-label="Required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+        </div>
+
+        <!-- VALUE -->
+        <div class="form-group">
+          <input class="form-group__input" type="text" name="" value="Text in here" placeholder="Text input">
+        </div>
+        <div class="form-group">
+          <input class="form-group__input form-group__input--icon-l" type="text" name="" value="Text in here" placeholder="Text input">
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-user-alt"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-group__input form-group__input--icon-r required" type="text" name="" value="Text in here" placeholder="Text input" required>
+          <div class="form-group__input-icon form-group__input-icon--right  form-group__input-icon--required has-tooltip" aria-label="Required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-group__input form-group__input--icon-lr required" type="text" name="" value="Text in here" placeholder="Text input" required>
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <div class="form-group__input-icon form-group__input-icon--right  form-group__input-icon--required has-tooltip" aria-label="Required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+        </div>
+
+        <!-- STATES -->
+        <div class="form-group form-group--info">
+          <input class="form-group__input" type="text" name="" value="" placeholder="Info text input">
+        </div>
+        <div class="form-group form-group--warning">
+          <input class="form-group__input form-group__input--icon-l" type="text" name="" value="" placeholder="Warning text input">
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-user-alt"></i>
+          </div>
+        </div>
+        <div class="form-group form-group--danger">
+          <input class="form-group__input form-group__input--icon-r required" type="text" name="" value="" placeholder="Danger text input" required>
+          <div class="form-group__input-icon form-group__input-icon--right   form-group__input-icon--required has-tooltip" aria-label="Required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+        </div>
+        <div class="form-group form-group--success">
+          <input class="form-group__input form-group__input--icon-lr required" type="text" name="" value="" placeholder="Success text input" required>
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <div class="form-group__input-icon form-group__input-icon--right   form-group__input-icon--required has-tooltip" aria-label="Required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+        </div>
+
+        <!-- DISABLED -->
+        <div class="form-group form-group--disabled">
+          <input class="form-group__input" type="text" name="" value="" placeholder="Disabled text input" disabled>
+        </div>
+        <div class="form-group form-group--disabled">
+          <input class="form-group__input form-group__input--icon-l" type="text" name="" value="" placeholder="Disabled text input" disabled>
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-user-alt"></i>
+          </div>
+        </div>
+        <div class="form-group form-group--disabled">
+          <input class="form-group__input form-group__input--icon-r required" type="text" name="" value="" placeholder="Disabled text input" required disabled>
+          <div class="form-group__input-icon form-group__input-icon--right   has-tooltip" aria-label="Disabled">
+            <i class="fas fa-ban"></i>
+          </div>
+        </div>
+        <div class="form-group form-group--disabled">
+          <input class="form-group__input form-group__input--icon-lr required" type="text" name="" value="" placeholder="Disabled text input" required disabled>
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <div class="form-group__input-icon form-group__input-icon--right   has-tooltip" aria-label="Disabled">
+            <i class="fas fa-ban"></i>
+          </div>
+        </div>
+
+        <!-- READ ONLY -->
+        <div class="form-group form-group--readonly">
+          <input class="form-group__input" type="text" name="" value="Read only text input" placeholder="" readonly>
+        </div>
+        <div class="form-group form-group--readonly">
+          <input class="form-group__input form-group__input--icon-l" type="text" name="" value="Read only text input" placeholder="" readonly>
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-user-alt"></i>
+          </div>
+        </div>
+        <div class="form-group form-group--readonly">
+          <input class="form-group__input" type="text" name="" value="Read only text input" placeholder="" readonly>
+        </div>
+        <div class="form-group form-group--readonly">
+          <input class="form-group__input form-group__input--icon-l" type="text" name="" value="Read only text input" placeholder="" readonly>
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-user-alt"></i>
+          </div>
+        </div>
+      </div>
+
+      <h3> Select Boxes </h3>
+      <div class="grid">
+        <div class="form-group form-group--select">
+          <select name="colors" id="select1" class="form-group__input">
+            <option value="0"> Select a color </option>
+            <option value="1"> Red </option>
+            <option value="2"> Blue </option>
+            <option value="3"> Green </option>
+          </select>
+        </div>
+        <div class="form-group form-group--select">
+          <select name="colors" id="select2" class="form-group__input form-group__input--focus">
+            <option value="0"> Select a color </option>
+            <option value="1"> Red </option>
+            <option value="2"> Blue </option>
+            <option value="3"> Green </option>
+          </select>
+        </div>
+        <div class="form-group form-group--select form-group--danger">
+          <select name="colors" id="select3" class="form-group__input">
+            <option value="0"> Select a color </option>
+            <option value="1"> Red </option>
+            <option value="2"> Blue </option>
+            <option value="3"> Green </option>
+          </select>
+        </div>
+        <div class="form-group form-group--select form-group--disabeld">
+          <select name="colors" id="select4" class="form-group__input" disabled>
+            <option value="0"> Select a color </option>
+            <option value="1"> Red </option>
+            <option value="2"> Blue </option>
+            <option value="3"> Green </option>
+          </select>
+        </div>
+      </div>
+
+      <h3> Text Areas </h3>
+      <div class="grid">
+        <div class="form-group form-group--textarea">
+          <textarea class="form-group__input" name="" placeholder="Text input"></textarea>
+        </div>
+        <div class="form-group form-group--textarea">
+          <textarea class="form-group__input form-group__input--icon-lr required" name="" placeholder="Text input">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-pen-alt"></i>
+          </div>
+          <div class="form-group__input-icon form-group__input-icon--right   form-group__input-icon--required has-tooltip" aria-label="Required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+        </div>
+      </div>
+
+      <h3> With Labels </h3>
+      <p> It is also a best practice to include a <code>label</code> for each text input. If an input has accompanying help text be sure to set the input's <code>aria-describedby</code> attribute to the <code>id</code> of its help text element. </p>
+      <div class="grid-columns">
+        <!-- BASIC -->
+        <div class="form-group">
+          <label class="form-group__label" for="input1"> Input Label </label>
+          <input id="input1" class="form-group__input" type="text" name="" value="" placeholder="Text input">
+        </div>
+        <div class="form-group">
+          <label class="form-group__label" for="input2"> Input Label </label>
+          <input id="input2" class="form-group__input" type="text" name="" value="" placeholder="Text input">
+        </div>
+        <div class="form-group">
+          <label class="form-group__label" for="input3"> Input Label </label>
+          <input id="input3" class="form-group__input form-group__input--icon-r" type="text" name="" value="" placeholder="Text input" required>
+          <div class="form-group__input-icon form-group__input-icon--right   form-group__input-icon--required has-tooltip" aria-label="Required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group__label" for="input4"> Input Label </label>
+          <input id="input4" class="form-group__input form-group__input--icon-r" type="text" name="" value="" placeholder="Text input" required>
+          <div class="form-group__input-icon form-group__input-icon--right   form-group__input-icon--required has-tooltip" aria-label="Required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+        </div>
+
+        <!-- HELP TEXT -->
+        <div class="form-group">
+          <label class="form-group__label" for="input5"> Input Label </label>
+          <input id="input5" class="form-group__input" type="text" name="" value="" placeholder="Text input" aria-describedby="help-block1">
+          <span id="help-block1" class="form-group__help-block">
+            <i class="far fa-info-circle"></i>
+            Help text.
+          </span>
+        </div>
+        <div class="form-group">
+          <label class="form-group__label" for="input6"> Input Label </label>
+          <input id="input6" class="form-group__input" type="text" name="" value="" placeholder="Text input" aria-describedby="help-block2">
+          <span id="help-block2" class="form-group__help-block form-group__help-block--info">
+            <i class="far fa-info-circle"></i>
+            Help text.
+          </span>
+        </div>
+        <div class="form-group">
+          <label class="form-group__label" for="input7"> Input Label </label>
+          <input id="input7" class="form-group__input form-group__input--icon-r" type="text" name="" value="lester@mctester.com" placeholder="Text input" required aria-describedby="help-block3">
+          <div class="form-group__input-icon form-group__input-icon--right  form-group__input-icon--success">
+            <i class="fas fa-check"></i>
+          </div>
+          <span id="help-block3" class="form-group__help-block form-group__help-block--success">
+            <i class="far fa-check-circle"></i>
+            Success.
+          </span>
+        </div>
+        <div class="form-group">
+          <label class="form-group__label" for="input8"> Input Label </label>
+          <input id="input8" class="form-group__input form-group__input--icon-r" type="text" name="" value="12345678" placeholder="Text input" required aria-describedby="help-block4">
+          <div class="form-group__input-icon form-group__input-icon--right  form-group__input-icon--danger">
+            <i class="fas fa-times"></i>
+          </div>
+          <span id="help-block4" class="form-group__help-block form-group__help-block--danger">
+            <i class="far fa-times-circle"></i>
+            Invalid.
+          </span>
+        </div>
+      </div>
+
+      <!-- SELECT BOXES -->
+      <div class="grid">
+        <div class="form-group form-group--select">
+          <label for="#select5" class="form-group__label"> Select Box Label </label>
+          <select name="colors" id="select5" class="form-group__input">
+            <option value="0"> Select a color </option>
+            <option value="1"> Red </option>
+            <option value="2"> Blue </option>
+            <option value="3"> Green </option>
+          </select>
+        </div>
+        <div class="form-group form-group--select">
+          <label for="#select6" class="form-group__label"> Select Box Label </label>
+          <select name="colors" id="select6" class="form-group__input" aria-describedby="#help-block6">
+            <option value="0"> Select a color </option>
+            <option value="1"> Red </option>
+            <option value="2"> Blue </option>
+            <option value="3"> Green </option>
+          </select>
+          <span id="help-block6" class="form-group__help-block form-group__help-block--info">
+            <i class="far fa-info-circle"></i>
+            Help text.
+          </span>
+        </div>
+        <div class="form-group form-group--select form-group--danger">
+          <label for="#select7" class="form-group__label"> Select Box Label </label>
+          <select name="colors" id="select7" class="form-group__input" aria-describedby="#help-block7">
+            <option value="0"> Select a color </option>
+            <option value="1"> Red </option>
+            <option value="2"> Blue </option>
+            <option value="3"> Green </option>
+          </select>
+          <span id="help-block7" class="form-group__help-block form-group__help-block--danger">
+            <i class="far fa-times-circle"></i>
+            Invalid.
+          </span>
+        </div>
+        <div class="form-group form-group--select form-group--disabeld">
+          <label for="#select8" class="form-group__label"> Select Box Label </label>
+          <select name="colors" id="select8" class="form-group__input" disabled aria-describedby="help-block7">
+            <option value="0"> Select a color </option>
+            <option value="1"> Red </option>
+            <option value="2"> Blue </option>
+            <option value="3"> Green </option>
+          </select>
+          <span id="help-block8" class="form-group__help-block">
+            <i class="far fa-info-circle"></i>
+            This field is disabled.
+          </span>
+        </div>
+      </div>
+
+      <!-- TEXTAREAS -->
+      <div class="grid">
+        <div class="form-group form-group--textarea">
+          <label class="form-group__label" for="textarea1"> Input Label </label>
+          <textarea id="textarea1" class="form-group__input" name="" placeholder="Text input"></textarea>
+        </div>
+        <div class="form-group form-group--textarea">
+          <label class="form-group__label" for="textarea2"> Input Label </label>
+          <textarea id="textarea2" class="form-group__input form-group__input--icon-lr required" name="" placeholder="Text input" area-describedby="help-block5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-pen-alt"></i>
+          </div>
+          <div class="form-group__input-icon form-group__input-icon--right   form-group__input-icon--required has-tooltip" aria-label="Required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+          <span id="help-block5" class="form-group__help-block">
+            <i class="far fa-info-circle"></i>
+            Character Count: 240
+          </span>
+        </div>
+      </div>
+
+      <h3> Checkboxes and Radio Buttons </h3>
+      <p> Checkboxes and radio buttons use the same <code>form-group</code> structure as text inputs. However, many <code>form-group__input</code> elements can be added in succession within the form group to create a list of options.</p>
+      <div class="grid">
+        <div class="form-group form-group--checkbox">
+          <label for="" class="form-group__label"> Checkboxes </label>
+          <label class="form-group__input">
+            <input type="checkbox" name="checkbox" class="form-group__checkbox">
+            <span class="form-group__checkbox-label"> Option 1 </span>
+          </label>
+          <label class="form-group__input">
+            <input type="checkbox" name="checkbox" class="form-group__checkbox">
+            <span class="form-group__checkbox-label"> Long Name Option 2 </span>
+          </label>
+          <label class="form-group__input">
+            <input type="checkbox" name="checkbox" class="form-group__checkbox">
+            <span class="form-group__checkbox-label"> Option 3 </span>
+          </label>
+        </div>
+
+        <div class="form-group form-group--radio">
+          <label for="" class="form-group__label"> Radio Buttons </label>
+          <label class="form-group__input">
+            <input type="radio" name="radio" class="form-group__radio">
+            <span class="form-group__radio-label"> Option 1 </span>
+          </label>
+          <label class="form-group__input">
+            <input type="radio" name="radio" class="form-group__radio">
+            <span class="form-group__radio-label"> Long Name Option 2 </span>
+          </label>
+          <label class="form-group__input">
+            <input type="radio" name="radio" class="form-group__radio">
+            <span class="form-group__radio-label"> Option 3 </span>
+          </label>
+        </div>
+      </div>
+
+      <!-- TODO -->
+      <!-- Make file inputs keyboard accessible -->
+      <h3> File Upload Input </h3>
+      <div class="grid">
+        <div class="form-group form-group--file">
+          <label for="file-input1" class="form-group__label"> Upload Files </label>
+          <label for="file-input1" class="form-group__input" tabindex="0">
+            <input type="file" id="file-input1" class="form-group__file">
+            <span class="form-group__file-icon">
+              <i class="fal fa-cloud-upload"></i>
+            </span>
+            <span class="form-group__file-label"> Select files to upload </span>
+          </label>
+        </div>
+        <div class="form-group form-group--file">
+          <label for="file-input2" class="form-group__label"> Upload files </label>
+          <label for="file-input2" class="form-group__input" tabindex="0" aria-describedby="help-block4">
+            <input type="file" id="file-input2" class="form-group__file">
+            <span class="form-group__file-icon">
+              <i class="fal fa-cloud-upload"></i>
+            </span>
+            <span class="form-group__file-label"> Select files to upload </span>
+          </label>
+          <span id="help-block4" class="form-group__help-block">
+            <i class="far fa-info-circle"></i>
+            Acceptable file types: .jpg .png .gif
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- //==========================// -->
+    <!-- //         BUTTONS          // -->
+    <!-- //==========================// -->
+
+    <section id="buttons">
+      <h1> Buttons </h1>
+      <p> Use any combination of the available button classes and modifiers to quickly create a styled button. </p>
+
+      <h3> Default Buttons </h3>
+      <p> Default buttons should be used for any primary user action, such as submit buttons. </p>
+      <div class="grid">
+        <button class="button"> Button </button>
+        <button class="button button--hover"> Hover </button>
+        <button class="button button--pressed"> Pressed </button>
+        <button class="button button--icon">
+          <span class="button__icon">
+            <i class="fas fa-thumbs-up"></i>
+          </span>
+          <span class="button__icon-label"> Icon </span>
+        </button>
+        <button class="button button--confirm"> Confirm </button>
+        <button class="button button--danger"> Danger </button>
+        <button class="button disabled" disabled> Disabled </button>
+      </div>
+
+      <h3> Outline Buttons </h3>
+      <p> Outlined buttons have no background color and colored text. All cancel buttons within a form should be outlined buttons. </p>
+
+      <div class="grid">
+        <button class="button button--outline"> Button </button>
+        <button class="button button--outline button--hover"> Hover </button>
+        <button class="button button--outline button--pressed"> Pressed </button>
+        <button class="button button--outline button--icon">
+          <span class="button__icon">
+            <i class="fas fa-thumbs-up"></i>
+          </span>
+          <span class="button__icon-label"> Icon </span>
+        </button>
+        <button class="button button--outline button--confirm"> Confirm </button>
+        <button class="button button--outline button--danger"> Danger </button>
+        <button class="button button--outline disabled" disabled> Disabled </button>
+      </div>
+
+      <h3> Link Buttons </h3>
+      <p> Link buttons work particularly well in situations where you might use a small button (e.g. within a table cell) to focus more visual attention on the data rather than a bright colorful button. </p>
+      <div class="grid">
+        <button class="button button--link"> Button </button>
+        <button class="button button--link button--hover"> Hover </button>
+        <button class="button button--link button--pressed"> Pressed </button>
+        <button class="button button--link button--icon">
+          <span class="button__icon">
+            <i class="fas fa-thumbs-up"></i>
+          </span>
+          <span class="button__icon-label"> Icon </span>
+        </button>
+        <button class="button button--link button--confirm"> Confirm </button>
+        <button class="button button--link button--danger"> Danger </button>
+        <button class="button button--link disabled" disabled> Disabled </button>
+      </div>
+
+      <h3> Small Buttons </h3>
+      <p> Small buttons fit well inside of table cells and line items. </p>
+      <div class="grid-columns-5">
+
+        <!-- small default -->
+        <button class="button button--small"> Button </button>
+        <button class="button button--small button--hover"> Hover </button>
+        <button class="button button--small button--pressed"> Pressed </button>
+        <button class="button button--small button--icon">
+          <span class="button__icon">
+            <i class="fas fa-thumbs-up"></i>
+          </span>
+          <span class="button__icon-label"> Icon </span>
+        </button>
+        <button class="button button--small disabled" disabled> Disabled </button>
+
+        <!-- small outline -->
+        <button class="button button--small button--outline"> Button </button>
+        <button class="button button--small button--outline button--hover"> Hover </button>
+        <button class="button button--small button--outline button--pressed"> Pressed </button>
+        <button class="button button--small button--outline button--icon">
+          <span class="button__icon">
+            <i class="fas fa-thumbs-up"></i>
+          </span>
+          <span class="button__icon-label"> Icon </span>
+        </button>
+        <button class="button button--small disabled" disabled> Disabled </button>
+
+        <!-- small link -->
+        <button class="button button--small button--link"> Button </button>
+        <button class="button button--small button--link button--hover"> Hover </button>
+        <button class="button button--small button--link button--pressed"> Pressed </button>
+        <button class="button button--small button--link button--icon">
+          <span class="button__icon">
+            <i class="fas fa-thumbs-up"></i>
+          </span>
+          <span class="button__icon-label"> Icon </span>
+        </button>
+        <button class="button button--small disabled" disabled> Disabled </button>
+      </div>
+    </section>
+
+    <!-- //==========================// -->
+    <!-- //          TABELS          // -->
+    <!-- //==========================// -->
+
+    <section id="tables">
+      <h1> Tables </h1>
+      <p> Tables have several variations depending on the data that is being displayed or what needs to be done. They can be bare, striped and/or have actionable controls. </p>
+
+      <h3> Basic Tables </h3>
+      <p> All <code>&lt;table&gt;</code> elements are wraped in a <code>.table</code> container for proper styling. Each <code>&lt;table&gt;</code> element shoud consist of a <code>&lt;thead&gt;</code> for all columns headers, a <code>&lt;tbody&gt;</code> for all table data and occasionally a <code>&lt;tfoot&gt;</code> if needed. </p>
+
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th> Product Number </th>
+              <th> Quantity </th>
+              <th> Product Description </th>
+              <th> Design File </th>
+              <th> Department </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3> Striped Tables </h3>
+      <p> Striped tables have a slight variation in background color on every other row. This helps with legibility, particularly when the table has many rows. </p>
+      <p> To create a striped table, simply amend the <code>table--striped</code> class to the containing <code>&lt;div class="table"&gt; ... &lt;/div&gt;</code> </p>
+
+      <div class="table table--striped">
+        <table>
+          <thead>
+            <tr>
+              <th> Product Number </th>
+              <th> Quantity </th>
+              <th> Product Description </th>
+              <th> Design File </th>
+              <th> Department </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3> Tables With Buttons </h3>
+      <p> Some table rows may require certain actions to be taken. For these actionable rows is important to wrap all controls in a <code>&lt;div class="table__actions"&gt; ... &lt;/div&gt;</code> container in order to keep the table row height consistent with default tables. The container will also put whitespace between the controls if there happens to be more than one. </p>
+
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th> Product Number </th>
+              <th> Quantity </th>
+              <th> Product Description </th>
+              <th> Design File </th>
+              <th> Department </th>
+              <th> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+              <td> <div class="table__actions"> <button class="button"> Print </button> </div> </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+              <td> <div class="table__actions"> <button class="button button--outline"> Print </button> </div> </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+              <td> <div class="table__actions"> <button class="button button--link"> Print </button> </div> </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+              <td>
+                <div class="table__actions">
+                  <button class="button button--link"> <i class="far fa-edit"></i> </button>
+                  <button class="button button--link"> <i class="far fa-print"></i> </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3> Condensed Tables </h3>
+      <p> If you prefer a denser view of the table data you can add the <code>table--condensed</code> modifier to the <code>.table</code> container. Condensed tables require the use of the <code>button--small</code> modifier on any buttons within them. </p>
+
+      <div class="table table--striped table--condensed">
+        <table>
+          <thead>
+            <tr>
+              <th> Product Number </th>
+              <th> Quantity </th>
+              <th> Product Description </th>
+              <th> Design File </th>
+              <th> Department </th>
+              <th> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+              <td> <div class="table__actions"> <button class="button button--small"> Print </button> </div> </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+              <td> <div class="table__actions"> <button class="button button--small button--outline"> Print </button> </div> </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+              <td> <div class="table__actions"> <button class="button button--small button--link"> Print </button> </div> </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+              <td>
+                <div class="table__actions">
+                  <button class="button button--small button--link"> <i class="far fa-edit"></i> </button>
+                  <button class="button button--small button--link"> <i class="far fa-print"></i> </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- //==========================// -->
+    <!-- //          PANELS          // -->
+    <!-- //==========================// -->
+
+    <section id="panels">
+      <h1> Panels </h1>
+      <p> Panels are container elements that are used to call out an area of content. </p>
+
+      <h3> Basic Panel </h3>
+      <div class="panel">
+        <div class="panel__body">
+          Panel content.
+        </div>
+      </div>
+
+      <h3> Panel with Header and Footer </h3>
+      <div class="panel">
+        <div class="panel__header">
+          <h2 class="panel__title"> Panel Title </h2>
+        </div>
+        <div class="panel__body">
+          Panel content.
+        </div>
+        <div class="panel__footer">
+          Panel footer.
+        </div>
+      </div>
+
+      <h3> Panel with Controls </h3>
+      <div class="panel">
+        <div class="panel__header">
+          <h2 class="panel__title"> Panel Title </h2>
+        </div>
+        <div class="panel__body">
+          Panel content.
+        </div>
+        <div class="panel__footer">
+          <button class="button button--confirm"> Confirm </button>
+          <button class="button button--danger"> Reject </button>
+          <button class="button button--link"> Cancel </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- //==========================// -->
+    <!-- //          LISTS           // -->
+    <!-- //==========================// -->
+
+    <section id="lists">
+      <h1> Lists </h1>
+
+      <h3> Basic Lists </h3>
+      <p> Basic lists include ordered and unordered lists. </p>
+
+      <div class="grid">
+
+        <!-- ordered list -->
+        <div>
+          <label for=""> Orderd List </label>
+          <ol>
+            <li> Item 1 </li>
+            <li> Item 2 </li>
+            <li> Item 3 </li>
+            <li> Item 4 </li>
+            <li> Item 5 </li>
+          </ol>
+        </div>
+
+        <!-- unorderd list -->
+        <div>
+          <label for=""> Unordered List </label>
+          <ul>
+            <li> Item 1 </li>
+            <li> Item 2 </li>
+            <li> Item 3 </li>
+            <li> Item 4 </li>
+            <li> Item 5 </li>
+          </ul>
+        </div>
+      </div>
+
+      <h3> Description Lists </h3>
+      <p> Description lists are used to display a label and its associated content side-by-side. Description lists are comprised of a containing <code>&lt;dl&gt;</code> element, a <code>&lt;dt&gt;</code> for the label and a <code>&lt;dd&gt;</code> for the content. Multiple <code>&lt;dt&gt;</code> and <code>&lt;dd&gt;</code> pairs can be added to a single <code>&lt;dl&gt;</code> element. </p>
+
+      <dl class="description-list">
+        <dt class="description-list__label"> Description list label </dt>
+        <dd class="description-list__content"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos et optio perspiciatis nam iure voluptates in totam corporis magnam blanditiis, deleniti qui molestiae voluptatem dolor alias libero accusamus quam fuga. </dd>
+
+        <dt class="description-list__label"> A really long description list label </dt>
+        <dd class="description-list__content"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos et optio perspiciatis nam iure voluptates in totam corporis magnam blanditiis, deleniti qui molestiae voluptatem dolor alias libero accusamus quam fuga. </dd>
+      </dl>
+
+      <h3> List Groups </h3>
+      <p> List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within. </p>
+
+      <div class="grid">
+
+        <!-- default list group -->
+        <div>
+          <label for=""> Basic List Group </label>
+          <div class="list-group">
+            <span class="list-group__item"> Typography </span>
+            <span class="list-group__item"> Forms </span>
+            <span class="list-group__item"> Buttons </span>
+            <span class="list-group__item"> Tables </span>
+            <span class="list-group__item"> Panels </span>
+            <span class="list-group__item"> Lists </span>
+          </div>
+        </div>
+
+        <!-- list group with links -->
+        <div>
+          <label for=""> Link List Group </label>
+          <div class="list-group">
+            <a href="" class="list-group__item"> Typography </a>
+            <a href="" class="list-group__item"> Forms </a>
+            <a href="" class="list-group__item"> Buttons </a>
+            <a href="" class="list-group__item"> Tables </a>
+            <a href="" class="list-group__item"> Panels </a>
+            <a href="" class="list-group__item"> Lists </a>
+          </div>
+        </div>
+
+        <!-- list group with badges -->
+        <div>
+          <label for=""> List Group with Badges </label>
+          <div class="list-group">
+            <a href="" class="list-group__item">
+              Typography
+              <span class="list-group__item-badge"> 42 </span>
+            </a>
+            <a href="" class="list-group__item">
+              Forms
+              <span class="list-group__item-badge"> 42 </span>
+            </a>
+            <a href="" class="list-group__item">
+              Buttons
+              <span class="list-group__item-badge"> 42 </span>
+            </a>
+            <a href="" class="list-group__item">
+              Tables
+              <span class="list-group__item-badge"> 42 </span>
+            </a>
+            <a href="" class="list-group__item">
+              Panels
+              <span class="list-group__item-badge"> 42 </span>
+            </a>
+            <a href="" class="list-group__item">
+              Lists
+              <span class="list-group__item-badge"> 42 </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- list group with icons -->
+        <div>
+          <label for=""> List Group with Icons </label>
+          <div class="list-group">
+            <span class="list-group__item">
+              Typography
+              <span class="list-group__item-icon has-tooltip" aria-label="Warning">
+                <i class="far fa-exclamation-triangle"></i>
+              </span>
+            </span>
+            <span class="list-group__item">
+              Forms
+              <span class="list-group__item-icon has-tooltip" aria-label="Favorite">
+                <i class="far fa-star"></i>
+              </span>
+            </span>
+            <span class="list-group__item">
+              Buttons
+              <span class="list-group__item-icon has-tooltip" aria-label="Alarm">
+                <i class="far fa-alarm-clock"></i>
+              </span>
+            </span>
+            <span class="list-group__item">
+              Tables
+              <span class="list-group__item-icon has-tooltip" aria-label="New Message">
+                <i class="far fa-comments"></i>
+              </span>
+            </span>
+            <span class="list-group__item">
+              Panels
+              <span class="list-group__item-icon has-tooltip" aria-label="New Notifications">
+                <i class="far fa-bell"></i>
+              </span>
+            </span>
+            <span class="list-group__item">
+              Lists
+              <span class="list-group__item-icon has-tooltip" aria-label="Example info text.">
+                <i class="far fa-info-circle"></i>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <h3> List Groups with Content </h3>
+      <p> To extend the list group with more content, simply add a <code>&lt;div class="list-group__item-body"&gt;</code> container within the <code>&lt;div class="list-group__item"&gt; ... &lt;/div&gt;</code>  element. </p>
+
+      <div class="list-group">
+        <div class="list-group__item">
+          <div class="list-group__item-body">
+            <h4> List Group Item Title </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officiis eligendi tenetur iure error veritatis fugit at optio! At velit minus aliquid hic error dicta, explicabo odit dolore commodi corrupti!</p>
+            <div class="form-group form-group--radio">
+              <label for="" class="form-group__label"> Radio Buttons </label>
+              <label class="form-group__input">
+                <input type="radio" name="radio" class="form-group__radio" checked>
+                <span class="form-group__radio-label"> Option 1 </span>
+              </label>
+              <label class="form-group__input">
+                <input type="radio" name="radio" class="form-group__radio">
+                <span class="form-group__radio-label"> Long Name Option 2 </span>
+              </label>
+              <label class="form-group__input">
+                <input type="radio" name="radio" class="form-group__radio">
+                <span class="form-group__radio-label"> Option 3 </span>
+              </label>
+            </div>
+            <button class="button"> Button </button>
+            <button class="button button--link"> Button </button>
+          </div>
+          <span class="list-group__item-icon has-tooltip" aria-label="Example info text.">
+            <i class="fas fa-check text-success"></i>
+          </span>
+        </div>
+        <div class="list-group__item">
+          <div class="list-group__item-body">
+            <h4> List Group Item Title </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officiis eligendi tenetur iure error veritatis fugit at optio! At velit minus aliquid hic error dicta, explicabo odit dolore commodi corrupti!</p>
+            <div class="grid-columns-half">
+              <div class="form-group form-group--textarea">
+                <label class="form-group__label" for="textarea3"> Input Label </label>
+                <textarea id="textarea3" class="form-group__input form-group__input--icon-l required" name="" placeholder="Text input">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                <div class="form-group__input-icon form-group__input-icon--left">
+                  <i class="far fa-pen-alt"></i>
+                </div>
+              </div>
+            </div>
+            <button class="button"> Button </button>
+            <button class="button button--link"> Button </button>
+          </div>
+          <span class="list-group__item-icon has-tooltip" aria-label="Example info text.">
+            <i class="far fa-info-circle"></i>
+          </span>
+        </div>
+        <div class="list-group__item">
+          <div class="list-group__item-body">
+            <h4> List Group Item Title </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officiis eligendi tenetur iure error veritatis fugit at optio! At velit minus aliquid hic error dicta, explicabo odit dolore commodi corrupti!</p>
+            <div class="grid-columns-half">
+              <div class="form-group form-group--file">
+                <label for="file-input2" class="form-group__label"> Upload files </label>
+                <label for="file-input3" class="form-group__input" tabindex="0" aria-describedby="help-block5">
+                  <input type="file" id="file-input3" class="form-group__file">
+                  <span class="form-group__file-icon">
+                    <i class="fal fa-cloud-upload"></i>
+                  </span>
+                  <span class="form-group__file-label"> Select files to upload </span>
+                </label>
+                <span id="help-block5" class="form-group__help-block">
+                  <i class="far fa-info-circle"></i>
+                  Acceptable file types: .jpg .png .gif
+                </span>
+              </div>
+            </div>
+            <button class="button"> Button </button>
+            <button class="button button--link"> Button </button>
+          </div>
+          <span class="list-group__item-icon has-tooltip" aria-label="Example info text.">
+            <i class="far fa-info-circle"></i>
+          </span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer> <a href="#top"> <i class="far fa-arrow-alt-up"></i> Back to Top </a> </footer>
+</body>
+</html>

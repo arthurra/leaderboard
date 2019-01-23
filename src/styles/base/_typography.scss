@@ -1,0 +1,49 @@
+h1, h2, h3, h4, h5, h6 {
+  color: $black;
+}
+
+h1 {
+  font: $h1;
+  margin-bottom: $padding;
+  padding-top: $padding * 3;
+  letter-spacing: 0.01em;
+}
+
+h2 {
+  font: $h2;
+  margin-bottom: $padding;
+  padding-top: $padding * 3;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font: $h3;
+  margin-bottom: $padding;
+  padding-top: $padding * 2;
+  letter-spacing: 0.02em;
+}
+
+h4 {
+  font: $h4;
+  margin-bottom: $half-padding + $quarter-padding;
+  padding-top: $padding;
+}
+
+h5 {
+  font: $h5;
+  margin-bottom: $half-padding;
+  padding-top: $padding;
+  letter-spacing: 0.02em;
+}
+
+h6 {
+  font: $h6;
+  margin-bottom: $half-padding;
+  padding-top: 1rem;
+  letter-spacing: 0.01em;
+}
+
+p {
+  font: $p;
+  margin-bottom: $padding;
+}

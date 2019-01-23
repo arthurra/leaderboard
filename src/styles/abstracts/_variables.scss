@@ -1,0 +1,90 @@
+// ---------------------------------- \\
+//              COLORS                \\
+// ---------------------------------- \\
+
+$black: #37474F;
+$darker-gray: #5A6779;
+$dark-gray: #78909C;
+$gray: #CFD8DC;
+$light-gray: #EAECEF;
+$lighter-gray: #F5F5F5;
+$near-white: #FCFCFC;
+
+$sg-pink: #FF7A67;
+$sg-fuchsia: #CC74B7;
+$sg-purple: #977FD2;
+$sg-blue: #2c97de;
+$sg-navy: #2f6f9f;
+$sg-aqua: #00C9BC;
+$sg-teal: #099;
+$sg-green: #39C46C;
+$sg-yellow: #fdbb37;
+$sg-orange: #E87E4B;
+$sg-red: #D63A3A;
+
+$color-danger: $sg-red;
+$color-warning: $sg-yellow;
+$color-success: $sg-green;
+$color-info: $sg-blue;
+
+$color-primary: $sg-navy;
+$color-secondary: $sg-blue;
+
+$input-background-color: $near-white;
+$nav-background-color: lighten($lighter-gray, 2%);
+
+
+// ---------------------------------- \\
+//             TYPOGRAPHY             \\
+// ---------------------------------- \\
+
+$text-color: $darker-gray;
+$light-text-color: $dark-gray;
+$link-color: $color-secondary;
+
+$base-font-size: 16px;
+
+$font-family: 'Inter UI var alt', 'Inter UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$h1: normal normal 700 1.875rem/3.5rem $font-family;      // 30px/56px
+$h2: normal normal 400 1.25rem/3rem $font-family;         // 20px/48px
+$h3: normal normal 700 0.875rem/1.5rem $font-family;      // 14px/24px
+$h4: normal normal 400 1rem/2.25rem $font-family;         // 16px/36px
+$h5: normal normal 700 0.75rem/1.5rem $font-family;       // 12px/24px
+$h6: italic normal 400 0.75rem/1.5rem $font-family;       // 12px/24px
+$p: normal normal 400 0.875rem/1.5rem $font-family;       // 14px/24px
+$label: normal normal 500 0.75rem/1.5rem $font-family;    // 12px/24px
+
+
+// ---------------------------------- \\
+//               DISPLAY              \\
+// ---------------------------------- \\
+
+$padding: 1rem;
+$half-padding: $padding / 2;
+$quarter-padding: $half-padding / 2;
+
+$dark-border: 1px solid $dark-gray;
+$border: 1px solid $gray;
+$light-border: 1px solid $light-gray;
+$border-radius: 2px;
+
+$box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+$dark-box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+$text-highlight: 0 1px 0 #fff;
+$text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+
+$input-height: 2rem;
+
+
+// ---------------------------------- \\
+//          TIMING FUNCTIONS          \\
+// ---------------------------------- \\
+
+$transition-duration: 0.1s;
+$golden-transition-duration: 0.1618s;
+
+$bounce: cubic-bezier(.35,.25,0,1.5);
+$heavy-bounce: cubic-bezier(.32,2,.65,.91);
+$smooth-ease: cubic-bezier(0.455, 0.030, 0.515, 0.955);

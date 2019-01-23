@@ -1,0 +1,21 @@
+{
+  "name": "leaderboard",
+  "version": "1.0.0",
+  "author": "Ryan Arthur",
+  "homepage": "",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:arthurra/leaderboard.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^3.2.1",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}

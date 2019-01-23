@@ -1,0 +1,192 @@
+// ---------------------------------- \\
+//             VARIABLES              \\
+// ---------------------------------- \\
+
+$button-height: $padding * 2;
+$small-button-height: $button-height * 0.75;
+
+
+// ---------------------------------- \\
+//              DISPLAY               \\
+// ---------------------------------- \\
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: $button-height;
+  padding: 0 $padding;
+  font: $p;
+  line-height: 1;
+  color: #fff;
+  background-color: $color-secondary;
+  border: 1px solid $color-secondary;
+  border-radius: $border-radius;
+  cursor: pointer;
+  box-shadow: $box-shadow;
+  transition: all $transition-duration $smooth-ease;
+
+  &--hover,
+  &:hover,
+  &:focus {
+    border-color: $color-primary;
+    box-shadow: $dark-box-shadow, 0 0 0 1px #fff inset;
+    outline: none;
+  }
+
+  &--pressed,
+  &:active {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    box-shadow: 0 0 0 2px #fff inset;
+  }
+
+  &.disabled,
+  [disabled] {
+    color: $light-text-color !important;
+    background: $lighter-gray !important;
+    border: $border !important;
+    cursor: not-allowed !important;
+    box-shadow: none !important;
+  }
+
+  &--confirm {
+    background-color: $color-success;
+    border-color: $color-success;
+
+    &:hover,
+    &:focus {
+      border-color: darken($color-success, 10%);
+    }
+
+    &:active {
+      background-color: darken($color-success, 10%);
+    }
+  }
+
+  &--danger {
+    background-color: $color-danger;
+    border-color: $color-danger;
+
+    &:hover,
+    &:focus {
+      border-color: darken($color-danger, 10%);
+    }
+
+    &:active {
+      background-color: darken($color-danger, 10%);
+    }
+  }
+
+  &--small {
+    height: $small-button-height;
+    padding: 0 $half-padding;
+  }
+
+  &--outline {
+    color: $color-secondary;
+    background-color: #fff;
+
+    &.button--hover,
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: $color-secondary;
+    }
+
+    &.button--pressed,
+    &:active {
+      color: #fff;
+      background-color: $color-primary;
+    }
+
+    &.button--confirm {
+      color: $color-success;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: $color-success;
+        border-color: darken($color-success, 10%);
+      }
+
+      &:active {
+        background-color: darken($color-success, 10%);
+      }
+    }
+
+    &.button--danger {
+      color: $color-danger;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: $color-danger;
+        border-color: darken($color-danger, 10%);
+      }
+
+      &:active {
+        background-color: darken($color-danger, 10%);
+      }
+    }
+  }
+
+  &--link {
+    color: $color-secondary;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+
+    &.button--hover,
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: $color-secondary;
+      border-color: $color-primary;
+      box-shadow: $dark-box-shadow, 0 0 0 1px #fff inset;
+    }
+
+    &.button--pressed,
+    &:active {
+      color: #fff;
+      background-color: $color-primary;
+      border-color: $color-primary;
+      box-shadow: 0 0 0 2px #fff inset;
+    }
+
+    &.button--confirm {
+      color: $color-success;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: $color-success;
+        border-color: darken($color-success, 10%);
+      }
+
+      &:active {
+        background-color: darken($color-success, 10%);
+      }
+    }
+
+    &.button--danger {
+      color: $color-danger;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: $color-danger;
+        border-color: darken($color-danger, 10%);
+      }
+
+      &:active {
+        background-color: darken($color-danger, 10%);
+      }
+    }
+  }
+}
+
+.button__icon-label {
+  margin-left: $half-padding;
+}
