@@ -804,6 +804,18 @@ p {
   font-size: 85%;
   color: #78909C; }
 
+.team-1 {
+  color: #2c97de; }
+
+.team-2 {
+  color: #fdbb37; }
+
+.team-3 {
+  color: #D63A3A; }
+
+.team-4 {
+  color: #39C46C; }
+
 body {
   display: grid;
   grid-template-columns: auto 1000px auto;
