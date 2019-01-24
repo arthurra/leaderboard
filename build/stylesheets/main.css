@@ -730,7 +730,6 @@ p {
   font: normal normal 400 0.875rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .leaderboard {
-  grid-area: leaderboard;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "total teams"; }
@@ -780,11 +779,11 @@ p {
   justify-content: space-between;
   height: 100%;
   padding: 1rem;
-  font: normal normal 700 0.875rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font: normal normal 400 1.25rem/3rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .leaderboard__team + .leaderboard__team {
     border-top: 2px solid #CFD8DC; }
   .leaderboard__team:first-of-type {
-    font: normal normal 400 1.25rem/3rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-weight: 700; }
 
 .leaderboard__team-title-icon {
   color: #fdbb37; }
@@ -793,8 +792,11 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: auto 900px auto;
-  grid-template-areas: ". leaderboard .";
+  grid-template-areas: ". main .";
   align-content: center; }
+
+main {
+  grid-area: main; }
 
 .grid {
   display: grid;
