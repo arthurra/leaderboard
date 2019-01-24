@@ -778,7 +778,7 @@ p {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  padding: 1rem;
+  padding: 2rem;
   font: normal normal 400 1.25rem/3rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .leaderboard__team + .leaderboard__team {
     border-top: 2px solid #CFD8DC; }
@@ -787,6 +787,18 @@ p {
 
 .leaderboard__team-title-icon {
   color: #fdbb37; }
+
+.leaderboard__team-stats {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1.5rem; }
+
+.leaderboard__team-stat--total-score {
+  margin-left: 2rem; }
+
+.leaderboard__team-stat:not(.leaderboard__team-stat--total-score) {
+  font-size: 85%;
+  color: #78909C; }
 
 body {
   height: 100vh;

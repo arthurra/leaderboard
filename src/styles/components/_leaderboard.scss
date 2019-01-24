@@ -66,7 +66,7 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  padding: $padding;
+  padding: $padding * 2;
   font: $h2;
 
   & + & {
@@ -80,4 +80,22 @@
 
 .leaderboard__team-title-icon {
   color: $lb-yellow;
+}
+
+.leaderboard__team-stats {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: $padding * 1.5;
+}
+
+.leaderboard__team-stat {
+
+  &--total-score {
+    margin-left: $padding * 2;
+  }
+
+  &:not(.leaderboard__team-stat--total-score) {
+    font-size: 85%;
+    color: $light-text-color;
+  }
 }
