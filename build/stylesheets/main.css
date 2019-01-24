@@ -730,17 +730,18 @@ p {
   font: normal normal 400 0.875rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .leaderboard {
-  display: grid;
+  display: grid; }
+
+.leaderboard--teams {
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "total teams"; }
-
-.leaderboard__total {
-  grid-area: total; }
-
-.leaderboard__teams {
-  grid-area: teams; }
+  .leaderboard--teams .leaderboard__total {
+    grid-area: total; }
+  .leaderboard--teams .leaderboard__list {
+    grid-area: teams; }
 
 .leaderboard {
+  margin-bottom: 5rem;
   background-color: #FCFCFC;
   border-radius: 4px;
   box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.5);
@@ -768,37 +769,38 @@ p {
   background-color: #fdbb37;
   border-radius: 10px; }
 
-.leaderboard__teams {
+.leaderboard__list {
   display: grid;
   grid-auto-rows: 1fr;
-  border: 2px solid #CFD8DC;
-  border-left: none; }
+  border: 2px solid #CFD8DC; }
+  .leaderboard--teams .leaderboard__list {
+    border-left: none; }
 
-.leaderboard__team {
+.leaderboard__item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
   padding: 2rem;
   font: normal normal 400 1.25rem/3rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  .leaderboard__team + .leaderboard__team {
+  .leaderboard__item + .leaderboard__item {
     border-top: 2px solid #CFD8DC; }
-  .leaderboard__team:first-of-type {
+  .leaderboard__item:first-of-type {
     font-weight: 700; }
 
-.leaderboard__team-title-icon {
+.leaderboard__item-title-icon {
   color: #fdbb37; }
 
-.leaderboard__team-stats {
+.leaderboard__item-stats {
   display: grid;
   grid-auto-flow: column;
   grid-gap: 2rem; }
 
-.leaderboard__team-stat--total-score {
+.leaderboard__item-stat--total-score {
   width: 3.5em;
   text-align: right; }
 
-.leaderboard__team-stat:not(.leaderboard__team-stat--total-score) {
+.leaderboard__item-stat:not(.leaderboard__item-stat--total-score) {
   font-size: 85%;
   color: #78909C; }
 

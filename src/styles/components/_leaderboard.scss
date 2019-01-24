@@ -4,16 +4,19 @@
 
 .leaderboard {
   display: grid;
+}
+
+.leaderboard--teams {
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "total teams";
-}
 
-.leaderboard__total {
-  grid-area: total;
-}
+  .leaderboard__total {
+    grid-area: total;
+  }
 
-.leaderboard__teams {
-  grid-area: teams;
+  .leaderboard__list {
+    grid-area: teams;
+  }
 }
 
 
@@ -22,6 +25,7 @@
 // ---------------------------------- \\
 
 .leaderboard {
+  margin-bottom: 5rem;
   background-color: $near-white;
   border-radius: $border-radius;
   box-shadow: $soft-box-shadow;
@@ -53,14 +57,17 @@
   border-radius: 10px;
 }
 
-.leaderboard__teams {
+.leaderboard__list {
   display: grid;
   grid-auto-rows: 1fr;
   border: $border;
-  border-left: none;
+
+  .leaderboard--teams & {
+    border-left: none;
+  }
 }
 
-.leaderboard__team {
+.leaderboard__item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,24 +84,24 @@
   }
 }
 
-.leaderboard__team-title-icon {
+.leaderboard__item-title-icon {
   color: $lb-yellow;
 }
 
-.leaderboard__team-stats {
+.leaderboard__item-stats {
   display: grid;
   grid-auto-flow: column;
   grid-gap: $padding * 2;
 }
 
-.leaderboard__team-stat {
+.leaderboard__item-stat {
 
   &--total-score {
     width: 3.5em;
     text-align: right;
   }
 
-  &:not(.leaderboard__team-stat--total-score) {
+  &:not(.leaderboard__item-stat--total-score) {
     font-size: 85%;
     color: $light-text-color;
   }
