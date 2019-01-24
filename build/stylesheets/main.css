@@ -792,10 +792,11 @@ p {
 .leaderboard__team-stats {
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 1.5rem; }
+  grid-gap: 2rem; }
 
 .leaderboard__team-stat--total-score {
-  margin-left: 2rem; }
+  width: 3.5em;
+  text-align: right; }
 
 .leaderboard__team-stat:not(.leaderboard__team-stat--total-score) {
   font-size: 85%;
@@ -804,7 +805,7 @@ p {
 body {
   height: 100vh;
   display: grid;
-  grid-template-columns: auto 900px auto;
+  grid-template-columns: auto 1000px auto;
   grid-template-areas: ". main .";
   align-content: center; }
 

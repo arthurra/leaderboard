@@ -84,13 +84,14 @@
 .leaderboard__team-stats {
   display: grid;
   grid-auto-flow: column;
-  grid-gap: $padding * 1.5;
+  grid-gap: $padding * 2;
 }
 
 .leaderboard__team-stat {
 
   &--total-score {
-    margin-left: $padding * 2;
+    width: 3.5em;
+    text-align: right;
   }
 
   &:not(.leaderboard__team-stat--total-score) {
