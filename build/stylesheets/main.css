@@ -765,7 +765,7 @@ p {
   border-radius: 15px; }
 
 .leaderboard__progress-bar-inner {
-  height: 50%;
+  height: 14.6%;
   background-color: #fdbb37;
   border-radius: 10px; }
 
@@ -785,7 +785,7 @@ p {
   font: normal normal 400 1.25rem/3rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .leaderboard__item + .leaderboard__item {
     border-top: 2px solid #CFD8DC; }
-  .leaderboard__item:first-of-type {
+  .leaderboard__item--leader {
     font-weight: 700; }
 
 .leaderboard__item-title-icon {
@@ -805,11 +805,9 @@ p {
   color: #78909C; }
 
 body {
-  height: 100vh;
   display: grid;
   grid-template-columns: auto 1000px auto;
-  grid-template-areas: ". main .";
-  align-content: center; }
+  grid-template-areas: ". main ."; }
 
 main {
   grid-area: main; }

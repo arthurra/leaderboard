@@ -52,7 +52,7 @@
 }
 
 .leaderboard__progress-bar-inner {
-  height: 50%;
+  height: 14.6%;
   background-color: $lb-yellow;
   border-radius: 10px;
 }
@@ -79,7 +79,7 @@
     border-top: $border;
   }
 
-  &:first-of-type {
+  &--leader {
     font-weight: 700;
   }
 }
