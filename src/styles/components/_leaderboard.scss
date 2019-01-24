@@ -22,8 +22,8 @@
 // ---------------------------------- \\
 
 .leaderboard {
-  @extend %panel;
-  border: none;
+  background-color: $near-white;
+  border-radius: $border-radius;
   box-shadow: $soft-box-shadow;
   overflow: hidden;
 }
@@ -34,7 +34,6 @@
   text-align: center;
   color: $lighter-gray;
   background-color: $lb-blue;
-  // border-radius: $border-radius 0 0 $border-radius;
 }
 
 .leaderboard__progress-bar {

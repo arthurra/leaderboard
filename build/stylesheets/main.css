@@ -637,7 +637,7 @@ p {
   justify-content: start;
   justify-items: start; }
 
-.panel, .leaderboard {
+.panel {
   font: normal normal 400 0.875rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #FCFCFC;
   border: 2px solid #CFD8DC;
@@ -741,7 +741,8 @@ p {
   grid-area: teams; }
 
 .leaderboard {
-  border: none;
+  background-color: #FCFCFC;
+  border-radius: 4px;
   box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.5);
   overflow: hidden; }
 
