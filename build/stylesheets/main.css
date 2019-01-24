@@ -112,7 +112,8 @@ html {
           font-kerning: normal;
   -webkit-font-feature-settings: "calt" 1, "tnum" 0, "frac" 1, "case" 1, "ss01" 1, "cv08" 1, "kern" 1, "liga" 1;
           font-feature-settings: "calt" 1, "tnum" 0, "frac" 1, "case" 1, "ss01" 1, "cv08" 1, "kern" 1, "liga" 1;
-  color: #5A6779; }
+  color: #5A6779;
+  background-color: #FCFCFC; }
 
 body.show-grid {
   background-image: linear-gradient(to bottom, gray 0%, transparent 1px, transparent 100%);
@@ -751,7 +752,7 @@ p {
   padding: 1rem;
   font: normal normal 400 1.25rem/3rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #F5F5F5;
+  color: #fff;
   background-color: #2c97de; }
 
 .leaderboard__progress-bar {
