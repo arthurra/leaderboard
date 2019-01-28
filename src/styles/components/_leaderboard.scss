@@ -111,13 +111,23 @@
   }
 }
 
+.leaderboard__item-title {
+
+  @media screen and (max-width: 415px) {
+    max-width: calc(100% - 4em);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 .leaderboard__item-title-icon {
   color: $lb-yellow;
 }
 
 .leaderboard__item-stats {
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(3, auto) 1fr;
   grid-gap: $padding * 2;
 
   @media screen and (max-width: 415px) {
@@ -128,9 +138,9 @@
 .leaderboard__item-stat {
 
   &--total-score {
-    width: 4.5em;
     text-align: right;
     justify-self: end;
+    margin-left: $padding * 2;
 
     @media screen and (max-width: 415px) {
       transform: translateY(-100%);
