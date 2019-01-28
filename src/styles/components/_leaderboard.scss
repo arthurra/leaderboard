@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (max-width: 415px){
+@media screen and (max-width: 786px){
 
   .leaderboard--teams {
     grid-template-columns: auto;
@@ -59,19 +59,21 @@
   background-color: $lb-navy;
   border-radius: 15px;
 
-  @media screen and (max-width: 415px) {
+  @media screen and (max-width: 786px) {
     height: 30px;
     width: 100%;
   }
 }
 
+$progress: 19%;
+
 .leaderboard__progress-bar-inner {
-  height: 19%;
+  height: $progress;
   background-color: $lb-yellow;
   border-radius: 10px;
 
-  @media screen and (max-width: 415px) {
-    width: 19%;
+  @media screen and (max-width: 786px) {
+    width: $progress;
     height: 100%;
   }
 }

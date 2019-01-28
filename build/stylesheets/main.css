@@ -127,6 +127,12 @@ aside,
 main,
 footer {
   padding: 1rem; }
+  @media screen and (min-width: 415px) and (max-width: 786px) {
+    header,
+    aside,
+    main,
+    footer {
+      padding: 3rem; } }
 
 header {
   border-bottom: 2px solid #CFD8DC; }
@@ -741,7 +747,7 @@ p {
   .leaderboard--teams .leaderboard__list {
     grid-area: teams; }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 786px) {
   .leaderboard--teams {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -770,7 +776,7 @@ p {
   padding: 5px;
   background-color: #2f6f9f;
   border-radius: 15px; }
-  @media screen and (max-width: 415px) {
+  @media screen and (max-width: 786px) {
     .leaderboard__progress-bar {
       height: 30px;
       width: 100%; } }
@@ -779,7 +785,7 @@ p {
   height: 19%;
   background-color: #fdbb37;
   border-radius: 10px; }
-  @media screen and (max-width: 415px) {
+  @media screen and (max-width: 786px) {
     .leaderboard__progress-bar-inner {
       width: 19%;
       height: 100%; } }

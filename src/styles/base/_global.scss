@@ -26,6 +26,10 @@ aside,
 main,
 footer {
   padding: $padding;
+
+  @media screen and (min-width: 415px) and (max-width: 786px) {
+    padding: $padding * 3;
+  }
 }
 
 header {
