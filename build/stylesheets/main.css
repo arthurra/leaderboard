@@ -741,6 +741,12 @@ p {
   .leaderboard--teams .leaderboard__list {
     grid-area: teams; }
 
+@media screen and (max-width: 415px) {
+  .leaderboard--teams {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "total" "teams"; } }
+
 .leaderboard {
   margin-bottom: 5rem;
   background-color: #FCFCFC;
@@ -764,11 +770,19 @@ p {
   padding: 5px;
   background-color: #2f6f9f;
   border-radius: 15px; }
+  @media screen and (max-width: 415px) {
+    .leaderboard__progress-bar {
+      height: 30px;
+      width: 100%; } }
 
 .leaderboard__progress-bar-inner {
   height: 19%;
   background-color: #fdbb37;
   border-radius: 10px; }
+  @media screen and (max-width: 415px) {
+    .leaderboard__progress-bar-inner {
+      width: 19%;
+      height: 100%; } }
 
 .leaderboard__list {
   display: grid;
@@ -788,6 +802,10 @@ p {
     border-top: 2px solid #CFD8DC; }
   .leaderboard__item--leader {
     font-weight: 700; }
+  @media screen and (max-width: 415px) {
+    .leaderboard__item {
+      flex-direction: row;
+      flex-wrap: wrap; } }
 
 .leaderboard__item-title-icon {
   color: #fdbb37; }
@@ -796,10 +814,14 @@ p {
   display: grid;
   grid-auto-flow: column;
   grid-gap: 2rem; }
+  @media screen and (max-width: 415px) {
+    .leaderboard__item-stats {
+      width: 100%; } }
 
 .leaderboard__item-stat--total-score {
   width: 3.5em;
-  text-align: right; }
+  text-align: right;
+  justify-self: end; }
 
 .leaderboard__item-stat:not(.leaderboard__item-stat--total-score) {
   font-size: 85%;
@@ -819,7 +841,7 @@ p {
 
 body {
   display: grid;
-  grid-template-columns: auto 1000px auto;
+  grid-template-columns: auto minmax(auto, 1000px) auto;
   grid-template-areas: ". main ."; }
 
 main {

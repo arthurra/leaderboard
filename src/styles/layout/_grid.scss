@@ -1,6 +1,6 @@
 body {
   display: grid;
-  grid-template-columns: auto 1000px auto;
+  grid-template-columns: auto minmax(auto, 1000px) auto;
   grid-template-areas: ". main .";
 }
 
