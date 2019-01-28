@@ -820,12 +820,16 @@ p {
       width: 100%; } }
 
 .leaderboard__item-stat--total-score {
-  width: 3.5em;
+  width: 4.5em;
   text-align: right;
   justify-self: end; }
+  @media screen and (max-width: 415px) {
+    .leaderboard__item-stat--total-score {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%); } }
 
 .leaderboard__item-stat:not(.leaderboard__item-stat--total-score) {
-  font-size: 85%;
+  font-size: 75%;
   color: #78909C; }
 
 .team-1 {

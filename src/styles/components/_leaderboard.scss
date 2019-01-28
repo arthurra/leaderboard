@@ -128,13 +128,17 @@
 .leaderboard__item-stat {
 
   &--total-score {
-    width: 3.5em;
+    width: 4.5em;
     text-align: right;
     justify-self: end;
+
+    @media screen and (max-width: 415px) {
+      transform: translateY(-100%);
+    }
   }
 
   &:not(.leaderboard__item-stat--total-score) {
-    font-size: 85%;
+    font-size: 75%;
     color: $light-text-color;
   }
 }
