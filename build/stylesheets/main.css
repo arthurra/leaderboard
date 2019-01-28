@@ -788,8 +788,9 @@ p {
   display: grid;
   grid-auto-rows: 1fr;
   border: 2px solid #CFD8DC; }
-  .leaderboard--teams .leaderboard__list {
-    border-left: none; }
+  @media screen and (min-width: 415px) {
+    .leaderboard--teams .leaderboard__list {
+      border-left: none; } }
 
 .leaderboard__item {
   display: flex;

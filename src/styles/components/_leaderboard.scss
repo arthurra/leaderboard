@@ -81,8 +81,11 @@
   grid-auto-rows: 1fr;
   border: $border;
 
-  .leaderboard--teams & {
-    border-left: none;
+  @media screen and (min-width: 415px) {
+
+    .leaderboard--teams & {
+      border-left: none;
+    }
   }
 }
 
