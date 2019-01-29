@@ -9,3 +9,11 @@
 .text-success {
   color: $color-success;
 }
+
+.u-edit-show {
+  display: none !important;
+
+  [mv-mode="edit"] & {
+    display: grid !important;
+  }
+}
