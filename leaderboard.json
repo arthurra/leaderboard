@@ -6,7 +6,8 @@
 			"posts": 1,
 			"talks": 1,
 			"team": "2",
-			"points": "31"
+			"points": "31",
+			"team[team]points": "31"
 		},
 		{
 			"name": "Lauren Lauzau",
@@ -14,7 +15,8 @@
 			"leads": 0,
 			"talks": 0,
 			"team": "4",
-			"points": "20"
+			"points": "20",
+			"team[team]points": "20"
 		},
 		{
 			"name": "Steve Loar",
@@ -22,7 +24,8 @@
 			"leads": 0,
 			"posts": 0,
 			"team": "4",
-			"points": "20"
+			"points": "20",
+			"team[team]points": "20"
 		},
 		{
 			"name": "Tiko Nelson",
@@ -30,7 +33,8 @@
 			"posts": 1,
 			"talks": 0,
 			"team": "1",
-			"points": "14"
+			"points": "14",
+			"team[team]points": "14"
 		},
 		{
 			"name": "Beau Heubach",
@@ -38,7 +42,8 @@
 			"posts": 1,
 			"talks": 0,
 			"team": "3",
-			"points": "12"
+			"points": "12",
+			"team[team]points": "12"
 		},
 		{
 			"name": "Brandi Emerson",
@@ -46,7 +51,8 @@
 			"posts": 1,
 			"talks": 0,
 			"team": "3",
-			"points": "11"
+			"points": "11",
+			"team[team]points": "11"
 		},
 		{
 			"name": "Super Chris",
@@ -54,7 +60,8 @@
 			"posts": 1,
 			"talks": 0,
 			"team": "4",
-			"points": "10"
+			"points": "10",
+			"team[team]points": "10"
 		},
 		{
 			"name": "Jon Prell",
@@ -62,7 +69,8 @@
 			"posts": 1,
 			"talks": 0,
 			"team": "4",
-			"points": "10"
+			"points": "10",
+			"team[team]points": "10"
 		},
 		{
 			"name": "Ben McGrath",
@@ -70,7 +78,8 @@
 			"posts": 0,
 			"talks": 0,
 			"team": "2",
-			"points": "3"
+			"points": "3",
+			"team[team]points": "3"
 		},
 		{
 			"name": "Alex Heflin",
@@ -78,7 +87,8 @@
 			"posts": 0,
 			"talks": 0,
 			"team": "1",
-			"points": "1"
+			"points": "1",
+			"team[team]points": "1"
 		},
 		{
 			"name": "Ryan Arthur",
@@ -86,7 +96,8 @@
 			"posts": 0,
 			"talks": 0,
 			"team": "1",
-			"points": "1"
+			"points": "1",
+			"team[team]points": "1"
 		}
 	]
 }
