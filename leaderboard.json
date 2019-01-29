@@ -8,11 +8,13 @@
 		},
 		{
 			"name": "Lauren Lauzau",
-			"posts": 2
+			"posts": 2,
+			"leads": 0
 		},
 		{
 			"name": "Steve Loar",
-			"talks": 1
+			"talks": 1,
+			"leads": 0
 		}
 	]
 }
