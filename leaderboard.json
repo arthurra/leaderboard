@@ -5,6 +5,13 @@
 			"leads": 1,
 			"posts": 1,
 			"talks": 1
+		},
+		{
+			"name": null,
+			"leads": null,
+			"posts": null,
+			"talks": null,
+			"points": "[leads + multiply(posts,10) + multiply(talks,20)]"
 		}
 	]
 }
