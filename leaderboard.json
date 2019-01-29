@@ -7,11 +7,7 @@
 			"talks": 1
 		},
 		{
-			"name": null,
-			"leads": null,
-			"posts": null,
-			"talks": null,
-			"points": "[leads + multiply(posts,10) + multiply(talks,20)]"
+			"name": "L"
 		}
 	]
 }
