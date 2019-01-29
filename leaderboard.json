@@ -4,67 +4,78 @@
 			"name": " Kati Best ",
 			"leads": 1,
 			"posts": 1,
-			"talks": 1
+			"talks": 1,
+			"team": "4"
 		},
 		{
 			"name": "Lauren Lauzau",
 			"posts": 2,
 			"leads": 0,
-			"talks": 0
+			"talks": 0,
+			"team": "0"
 		},
 		{
 			"name": "Steve Loar",
 			"talks": 1,
 			"leads": 0,
-			"posts": 0
+			"posts": 0,
+			"team": "0"
 		},
 		{
 			"name": "Tiko Nelson",
 			"leads": 4,
 			"posts": 1,
-			"talks": 0
+			"talks": 0,
+			"team": "0"
 		},
 		{
 			"name": "Beau Heubach",
 			"leads": 2,
 			"posts": 1,
-			"talks": 0
+			"talks": 0,
+			"team": "0"
 		},
 		{
 			"name": "Brandi Emerson",
 			"leads": 1,
 			"posts": 1,
-			"talks": 0
+			"talks": 0,
+			"team": "0"
 		},
 		{
 			"name": "Super Chris",
 			"leads": 0,
 			"posts": 1,
-			"talks": 0
+			"talks": 0,
+			"team": "0"
 		},
 		{
 			"name": "Jon Prell",
 			"leads": 0,
 			"posts": 1,
-			"talks": 0
+			"talks": 0,
+			"team": "0"
 		},
 		{
 			"name": "Ben McGrath",
 			"leads": 3,
 			"posts": 0,
-			"talks": 0
+			"talks": 0,
+			"team": "0"
 		},
 		{
 			"name": "Alex Heflin",
 			"leads": 1,
 			"posts": 0,
-			"talks": 0
+			"talks": 0,
+			"team": "0"
 		},
 		{
 			"name": "Ryan Arthur",
 			"leads": 1,
 			"posts": 0,
-			"talks": 0
+			"talks": 0,
+			"team": "0"
 		}
 	]
 }
