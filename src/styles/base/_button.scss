@@ -206,3 +206,23 @@ $small-button-height: $button-height * 0.75;
   box-shadow: $soft-box-shadow;
   z-index: 100;
 }
+
+.mv-add-leaderboardTeamItem {
+  display: none !important;
+}
+
+.mv-add-leaderboardItem {
+  appearance: none;
+  font: $h2;
+  color: $color-secondary;
+  border-top: $border;
+  border-width: $border-width 0 0 0;
+  cursor: pointer;
+  transition: all $transition-duration $smooth-ease;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: $color-secondary;
+  }
+}
