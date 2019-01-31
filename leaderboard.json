@@ -98,13 +98,6 @@
 			"team": "1",
 			"points": "1",
 			"team[team]points": "1"
-		},
-		{
-			"team": "0",
-			"leads": 0,
-			"posts": 0,
-			"talks": 0,
-			"points": "0"
 		}
 	],
 	"leaderboardTeamItem": [
