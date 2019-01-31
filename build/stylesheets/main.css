@@ -335,15 +335,18 @@ p {
   margin-left: 0.5rem; }
 
 .button--ui-control {
-  position: fixed !important;
-  bottom: 50px;
-  right: 50px;
-  width: 4rem;
-  height: 4rem;
-  font-size: 125%;
-  border-radius: 50%;
-  box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.5);
-  z-index: 100; }
+  display: none; }
+  [mv-permissions*="edit"] .button--ui-control {
+    display: block;
+    position: fixed !important;
+    bottom: 50px;
+    right: 50px;
+    width: 4rem;
+    height: 4rem;
+    font-size: 125%;
+    border-radius: 50%;
+    box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.5);
+    z-index: 100; }
 
 .mv-add-leaderboardTeamItem {
   display: none !important; }

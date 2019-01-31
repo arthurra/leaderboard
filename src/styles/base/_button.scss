@@ -196,15 +196,20 @@ $small-button-height: $button-height * 0.75;
 // }
 
 .button--ui-control {
-  position: fixed !important;
-  bottom: 50px;
-  right: 50px;
-  width: 4rem;
-  height: 4rem;
-  font-size: 125%;
-  border-radius: 50%;
-  box-shadow: $soft-box-shadow;
-  z-index: 100;
+  display: none;
+
+  [mv-permissions*="edit"] & {
+    display: block;
+    position: fixed !important;
+    bottom: 50px;
+    right: 50px;
+    width: 4rem;
+    height: 4rem;
+    font-size: 125%;
+    border-radius: 50%;
+    box-shadow: $soft-box-shadow;
+    z-index: 100;
+  }
 }
 
 .mv-add-leaderboardTeamItem {
