@@ -21,7 +21,7 @@ $small-button-height: $button-height * 0.75;
   line-height: 1;
   color: #fff;
   background-color: $color-secondary;
-  border: 1px solid $color-secondary;
+  border: $border-width $border-style $color-secondary;
   border-radius: $border-radius;
   cursor: pointer;
   box-shadow: $box-shadow;
@@ -31,7 +31,7 @@ $small-button-height: $button-height * 0.75;
   &:hover,
   &:focus {
     border-color: $color-primary;
-    box-shadow: $dark-box-shadow, 0 0 0 1px #fff inset;
+    box-shadow: $dark-box-shadow, 0 0 0 $border-width #fff inset;
     outline: none;
   }
 
@@ -189,4 +189,20 @@ $small-button-height: $button-height * 0.75;
 
 .button__icon-label {
   margin-left: $half-padding;
+}
+
+// [mv-app].mv-unsaved-changes .mv-save {
+//   transform: scale(1.5);
+// }
+
+.button--ui-control {
+  position: fixed !important;
+  bottom: 50px;
+  right: 50px;
+  width: 4rem;
+  height: 4rem;
+  font-size: 125%;
+  border-radius: 50%;
+  box-shadow: $soft-box-shadow;
+  z-index: 100;
 }

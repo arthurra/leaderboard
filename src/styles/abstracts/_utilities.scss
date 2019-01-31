@@ -10,10 +10,10 @@
   color: $color-success;
 }
 
-.u-edit-show {
+[mv-app]:not([mv-mode="edit"]) .u-edit-show {
   display: none !important;
+}
 
-  [mv-mode="edit"] & {
-    display: grid !important;
-  }
+[mv-mode="edit"] .u-edit-hide {
+  display: none !important;
 }

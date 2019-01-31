@@ -335,7 +335,7 @@ $help-text-height: $label-height;
     position: relative;
     border-style: solid;
     border-width: 0.4rem 0.25rem;
-    border-radius: $border-radius;
+    border-radius: 2px;
     transition: border-color $transition-duration $smooth-ease;
   }
 

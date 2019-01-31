@@ -14,7 +14,14 @@
   </head>
 </head>
 <body>
-  <main mv-app="leaderboard" mv-storage="https://github.com/arthurra/leaderboard">
+  <main class="mv-highlight-unsaved" mv-app="leaderboard" mv-storage="https://github.com/arthurra/leaderboard" mv-bar="none">
+
+    <button class="button button--outline button--ui-control has-tooltip u-edit-hide mv-edit" aria-label="Edit">
+      <i class="far fa-edit"></i>
+    </button>
+    <button class="button button--outline button--ui-control has-tooltip u-edit-show mv-save mv-edit" aria-label="Save">
+      <i class="far fa-save"></i>
+    </button>
 
     <h1> Team Leaderboard </h1>
     <div class="leaderboard leaderboard--teams">
@@ -34,6 +41,7 @@
           <div class="leaderboard__item-stats">
 
             <div class="leaderboard__item-stat form-group">
+              <label for="" class="form-group__label u-edit-show"> Leads </label>
               <input class="form-group__input form-group__input--icon-l" type="number" name="" value="" property="teamLeads" mv-default="0">
               <div class="form-group__input-icon form-group__input-icon--left">
                 <i class="far fa-handshake"></i>
@@ -41,6 +49,7 @@
             </div>
 
             <div class="leaderboard__item-stat form-group">
+              <label for="" class="form-group__label u-edit-show"> Blog Posts </label>
               <input class="form-group__input form-group__input--icon-l" type="number" name="" value="" property="teamPosts" mv-default="0">
               <div class="form-group__input-icon form-group__input-icon--left">
                 <i class="far fa-file-alt"></i>
@@ -48,6 +57,7 @@
             </div>
 
             <div class="leaderboard__item-stat form-group">
+              <label for="" class="form-group__label u-edit-show"> Talks </label>
               <input class="form-group__input form-group__input--icon-l" type="number" name="" value="" property="teamTalks" mv-default="0">
               <div class="form-group__input-icon form-group__input-icon--left">
                 <i class="far fa-podium"></i>
@@ -69,22 +79,29 @@
       <div class="leaderboard__list">
 
         <div class="leaderboard__item" property="leaderboardItem" mv-multiple>
+          <div class="leaderboard__item-drag-handle mv-drag-handle">
+            <i class="far fa-sort"></i>
+          </div>
           <div class="leaderboard__item-title">
             <span property="name"> Kati Best </span>
-
-            <div class="form-group form-group--select u-edit-show">
-              <select name="team" class="form-group__input" property="team">
-                <option value="0"> Select a team </option>
-                <option value="1"> A1 Sizzl-icious </option>
-                <option value="2"> Team 2 Electric Boogaloo </option>
-                <option value="3"> Blingalls </option>
-                <option value="4"> Coiny McCoin Face </option>
-              </select>
+          </div>
+          <div class="leaderboard__item-team form-group form-group--select u-edit-show">
+            <label for="" class="form-group__label"> Team </label>
+            <select name="team" class="form-group__input form-group__input--icon-l" property="team">
+              <option value="0"> Select a team </option>
+              <option value="1"> A1 Sizzl-icious </option>
+              <option value="2"> Team 2 Electric Boogaloo </option>
+              <option value="3"> Blingalls </option>
+              <option value="4"> Coiny McCoin Face </option>
+            </select>
+            <div class="form-group__input-icon form-group__input-icon--left">
+              <i class="far fa-users"></i>
             </div>
           </div>
           <div class="leaderboard__item-stats">
 
             <div class="leaderboard__item-stat form-group">
+              <label for="" class="form-group__label u-edit-show"> Leads </label>
               <input class="form-group__input form-group__input--icon-l" type="number" name="" value="" property="leads" mv-default="0">
               <div class="form-group__input-icon form-group__input-icon--left">
                 <i class="far fa-handshake"></i>
@@ -92,6 +109,7 @@
             </div>
 
             <div class="leaderboard__item-stat form-group">
+              <label for="" class="form-group__label u-edit-show"> Blog Posts </label>
               <input class="form-group__input form-group__input--icon-l" type="number" name="" value="" property="posts" mv-default="0">
               <div class="form-group__input-icon form-group__input-icon--left">
                 <i class="far fa-file-alt"></i>
@@ -99,6 +117,7 @@
             </div>
 
             <div class="leaderboard__item-stat form-group">
+              <label for="" class="form-group__label u-edit-show"> Talks </label>
               <input class="form-group__input form-group__input--icon-l" type="number" name="" value="" property="talks" mv-default="0">
               <div class="form-group__input-icon form-group__input-icon--left">
                 <i class="far fa-podium"></i>
