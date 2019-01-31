@@ -103,10 +103,10 @@
 	"leaderboardTeamItem": [
 		{
 			"name": "Coiny McCoin Face",
-			"teamLeads": 1,
+			"teamLeads": 0,
 			"teamPosts": 4,
 			"teamTalks": 1,
-			"teamPoints": "61"
+			"teamPoints": "60"
 		},
 		{
 			"name": "Team 2 Electric Boogaloo",
