@@ -144,7 +144,7 @@ $small-button-height: $button-height * 0.75;
       color: #fff;
       background-color: $color-secondary;
       border-color: $color-primary;
-      box-shadow: $dark-box-shadow, 0 0 0 1px #fff inset;
+      box-shadow: $dark-box-shadow, 0 0 0 $border-width #fff inset;
     }
 
     &.button--pressed,
@@ -152,7 +152,7 @@ $small-button-height: $button-height * 0.75;
       color: #fff;
       background-color: $color-primary;
       border-color: $color-primary;
-      box-shadow: 0 0 0 2px #fff inset;
+      box-shadow: 0 0 0 $border-width #fff inset;
     }
 
     &.button--confirm {

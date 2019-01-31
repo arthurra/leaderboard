@@ -34,6 +34,9 @@
 
       <div class="leaderboard__list">
         <div class="leaderboard__item" property="leaderboardTeamItem" mv-multiple>
+          <div class="leaderboard__item-drag-handle mv-drag-handle">
+            <i class="far fa-sort"></i>
+          </div>
           <div class="leaderboard__item-title">
             <span property="name"> A1 Sizzl-icious </span>
           </div>
@@ -126,10 +129,13 @@
             <div class="leaderboard__item-stat leaderboard__item-stat--total-score">
               <i class="far fa-coins"></i>
               <span property="points" mv-default="[leads + multiply(posts,10) + multiply(talks,20)]"> </span>
-             </div>
+            </div>
           </div>
-        </div>
 
+          <!-- <button class="button button--link button--danger has-tooltip u-edit-show" aria-label="Delete" mv-action="delete(leaderboardItem)">
+            <i class="far fa-trash-alt"></i>
+          </button> -->
+        </div>
       </div>
     </div>
   </main>

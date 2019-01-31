@@ -108,6 +108,10 @@ progress {
     font-weight: 700;
   }
 
+  .mv-ui {
+    display: none !important;
+  }
+
   @media screen and (max-width: 415px) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -125,10 +129,12 @@ progress {
   color: $light-text-color;
   cursor: pointer;
   opacity: 0;
+  pointer-events: none;
   transition: all $transition-duration $smooth-ease;
 
   [mv-mode="edit"] .leaderboard__item:hover & {
     opacity: 1;
+    pointer-events: all;
   }
 
   &:hover {
@@ -197,14 +203,6 @@ progress {
     [mv-mode="edit"] & {
       color: $text-color;
       border-color: $border-color;
-    }
-
-    &:hover {
-      border-color: lighten($color-secondary, 20%);
-    }
-
-    &:focus {
-      border-color: $color-secondary;
     }
   }
 }

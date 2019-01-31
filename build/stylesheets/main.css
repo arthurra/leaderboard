@@ -308,7 +308,7 @@ p {
       color: #fff;
       background-color: #2c97de;
       border-color: #2f6f9f;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 1px #fff inset; }
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset; }
     .button--link.button--pressed, .button--link:active {
       color: #fff;
       background-color: #2f6f9f;
@@ -847,6 +847,8 @@ progress {
     border-top: 2px solid #CFD8DC; }
   .leaderboard__item--leader, .leaderboard__item:first-of-type {
     font-weight: 700; }
+  .leaderboard__item .mv-ui {
+    display: none !important; }
   @media screen and (max-width: 415px) {
     .leaderboard__item {
       flex-direction: row;
@@ -863,9 +865,11 @@ progress {
   color: #78909C;
   cursor: pointer;
   opacity: 0;
+  pointer-events: none;
   transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
   [mv-mode="edit"] .leaderboard__item:hover .leaderboard__item-drag-handle {
-    opacity: 1; }
+    opacity: 1;
+    pointer-events: all; }
   .leaderboard__item-drag-handle:hover {
     background-color: #2c97de;
     color: #FCFCFC; }
@@ -918,10 +922,6 @@ progress {
   [mv-mode="edit"] .leaderboard__item-stat .form-group__input {
     color: #5A6779;
     border-color: #CFD8DC; }
-  .leaderboard__item-stat .form-group__input:hover {
-    border-color: #84c2ec; }
-  .leaderboard__item-stat .form-group__input:focus {
-    border-color: #2c97de; }
 
 .team-1 {
   color: #2c97de; }
