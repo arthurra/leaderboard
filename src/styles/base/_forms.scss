@@ -325,6 +325,10 @@ $help-text-height: $label-height;
 
 .form-group--select {
 
+  .form-group__input {
+    padding-right: $input-height;
+  }
+
   &:before,
   &:after {
     content: "";
