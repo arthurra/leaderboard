@@ -27,10 +27,9 @@
     <div class="leaderboard leaderboard--teams">
       <div class="leaderboard__total">
         Q1 Goal Progress
-        <div class="leaderboard__progress-bar">
-          <div class="leaderboard__progress-bar-inner"></div>
-        </div>
-        [sum(points)] / 700
+        <meta property="progress" content="[(sum(points)/700)]" />
+        <progress value="[progress]"></progress>
+        [progress*100]%
       </div>
 
       <div class="leaderboard__list">
