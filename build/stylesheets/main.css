@@ -938,6 +938,9 @@ progress {
 .team-4 {
   color: #39C46C; }
 
+.mv-bar.mv-ui {
+  display: none !important; }
+
 body {
   display: grid;
   grid-template-columns: auto minmax(auto, 1000px) auto;
