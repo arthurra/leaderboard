@@ -36,9 +36,7 @@
 .leaderboard {
   margin-bottom: 5rem;
   background-color: $near-white;
-  border-radius: $border-radius;
   box-shadow: $soft-box-shadow;
-  overflow: hidden;
 }
 
 .leaderboard__total {
@@ -48,9 +46,16 @@
   justify-content: space-between;
   padding: $padding;
   font: $h2;
+  line-height: 7rem;
   text-align: center;
   color: #fff;
   background-color: $lb-blue;
+  border-radius: $border-radius 0 0 $border-radius;
+
+  @media screen and (max-width: 786px) {
+    line-height: 4rem;
+    border-radius: $border-radius $border-radius 0 0;
+  }
 }
 
 progress {
@@ -64,7 +69,7 @@ progress {
     position: absolute;
     top: 50%;
     left:50%;
-    width: 300px;
+    width: 360px;
     transform: translate(-50%, -50%) rotate(-90deg);
   }
 
@@ -73,7 +78,7 @@ progress {
   }
 
   &::-webkit-progress-value {
-    background-color: $lb-yellow;
+    background-color: gold;
     border-radius: 10px;
   }
 }
@@ -82,11 +87,17 @@ progress {
   display: grid;
   grid-auto-rows: 1fr;
   border: $border;
+  border-radius: $border-radius;
+
+  .leaderboard--teams & {
+    border-radius: 0 0 $border-radius $border-radius;
+  }
 
   @media screen and (min-width: 415px) {
 
     .leaderboard--teams & {
       border-left: none;
+      border-radius: 0 $border-radius $border-radius 0;
     }
   }
 }
@@ -148,13 +159,14 @@ progress {
 
   .leaderboard__item:first-of-type:not(.gu-mirror) &:before {
     content: url("data:image/svg+xml;charset=UTF-8, <svg class='svg-inline--fa fa-crown fa-w-20 leaderboard__item-title-icon' aria-hidden='true' data-prefix='fas' data-icon='crown' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512' data-fa-i2svg=''><path fill='gold' d='M528 448H112c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h416c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm64-320c-26.5 0-48 21.5-48 48 0 7.1 1.6 13.7 4.4 19.8L476 239.2c-15.4 9.2-35.3 4-44.2-11.6L350.3 85C361 76.2 368 63 368 48c0-26.5-21.5-48-48-48s-48 21.5-48 48c0 15 7 28.2 17.7 37l-81.5 142.6c-8.9 15.6-28.9 20.8-44.2 11.6l-72.3-43.4c2.7-6 4.4-12.7 4.4-19.8 0-26.5-21.5-48-48-48S0 149.5 0 176s21.5 48 48 48c2.6 0 5.2-.4 7.7-.8L128 416h384l72.3-192.8c2.5.4 5.1.8 7.7.8 26.5 0 48-21.5 48-48s-21.5-48-48-48z'></path></svg>");
-    width: 25px;
-    height: 20px;
     display: inline-block;
+    width: 25px;
+    line-height: 3rem;
+    margin-right: $half-padding;
   }
 
   @media screen and (max-width: 415px) {
-    max-width: calc(100% - 4em);
+    margin-bottom: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -176,34 +188,59 @@ progress {
   }
 }
 
-.leaderboard__item-stat {
-
-  &--total-score {
-    text-align: right;
-    justify-self: end;
-    width: 3.25em;
-    margin-left: $padding * 2;
-
-    @media screen and (max-width: 415px) {
-      transform: translateY(-100%);
-    }
-  }
-
-  [mv-app]:not([mv-mode="edit"]) &.form-group {
-    margin-bottom: 0;
-  }
+.leaderboard__item-stat,
+.leaderboard__item-team {
 
   .form-group__input {
-    max-width: 4.5rem;
-    font-size: 1rem;
-    line-height: 1;
     color: $light-text-color;
     border-color: transparent;
 
     [mv-mode="edit"] & {
       color: $text-color;
       border-color: $border-color;
+
+      &:hover {
+        border-color: lighten($color-secondary, 20%);
+      }
+
+      &:focus {
+        border-color: $color-secondary;
+      }
     }
+  }
+
+  .form-group__input-icon {
+    pointer-events: none;
+  }
+}
+
+.leaderboard__item-team {
+
+  &:before,
+  &:after {
+    display: none;
+    pointer-events: none;
+  }
+
+  [mv-mode="edit"] & {
+
+    &:before,
+    &:after {
+      display: block;
+    }
+  }
+}
+
+.leaderboard__item-stat {
+
+  &--total-score {
+    text-align: right;
+    justify-self: end;
+    width: 3.25em;
+  }
+
+  .form-group__input {
+    max-width: 4.5rem;
   }
 }
 

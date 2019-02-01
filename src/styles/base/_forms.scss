@@ -14,7 +14,7 @@ $help-text-height: $label-height;
 
 .form-group {
   display: grid;
-  grid-template-rows: auto $input-height auto;
+  grid-template-rows: $label-height $input-height auto;
   grid-template-columns: $icon-width 1fr $icon-width;
   grid-template-areas:
     "label label label"

@@ -16,11 +16,13 @@
 <body>
   <main class="mv-highlight-unsaved" mv-app="leaderboard" mv-storage="https://github.com/arthurra/leaderboard" mv-bar="">
 
-    <button class="button button--outline button--ui-control has-tooltip u-edit-hide mv-edit" aria-label="Edit">
+    <button class="button button--outline button--ui-control u-edit-hide mv-edit" aria-label="Edit">
       <i class="far fa-edit"></i>
+      Edit
     </button>
-    <button class="button button--outline button--ui-control has-tooltip u-edit-show mv-save mv-edit" aria-label="Save">
+    <button class="button button--outline button--ui-control u-edit-show mv-save mv-edit" aria-label="Save">
       <i class="far fa-save"></i>
+      Save
     </button>
 
     <h1> Team Leaderboard </h1>
@@ -85,10 +87,10 @@
             <i class="far fa-sort"></i>
           </div>
           <div class="leaderboard__item-title">
-            <span property="name"> Kati Best </span>
+            [$index + 1]. <span property="name"> Kati Best </span>
           </div>
-          <div class="leaderboard__item-team form-group form-group--select u-edit-show">
-            <label for="" class="form-group__label"> Team </label>
+          <div class="leaderboard__item-team form-group form-group--select">
+            <label for="" class="form-group__label u-edit-show"> Team </label>
             <select name="team" class="form-group__input form-group__input--icon-l" property="team">
               <option value="0"> Select a team </option>
               <option value="1"> A1 Sizzl-icious </option>
