@@ -373,6 +373,12 @@ p {
     color: #fff;
     background-color: #2c97de; }
 
+[mv-app][mv-permissions*="logout"] .mv-login {
+  display: none !important; }
+
+[mv-app]:not([mv-permissions*="logout"]) .mv-logout {
+  display: none !important; }
+
 .form-group {
   display: grid;
   grid-template-rows: 1.5rem 2rem auto;

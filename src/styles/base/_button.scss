@@ -238,3 +238,11 @@ $small-button-height: $button-height * 0.75;
     background-color: $color-secondary;
   }
 }
+
+[mv-app][mv-permissions*="logout"] .mv-login {
+  display: none !important;
+}
+
+[mv-app]:not([mv-permissions*="logout"]) .mv-logout {
+  display: none !important;
+}
