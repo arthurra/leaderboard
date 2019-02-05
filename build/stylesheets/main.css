@@ -811,6 +811,8 @@ p {
   margin-bottom: 5rem;
   background-color: #FCFCFC;
   box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.5); }
+  .leaderboard--teams {
+    height: 588px; }
 
 .leaderboard__total {
   position: relative;
@@ -846,8 +848,10 @@ progress {
   progress::-webkit-progress-bar {
     background-color: transparent; }
   progress::-webkit-progress-value {
+    min-width: 20px;
     background-color: gold;
-    border-radius: 10px; }
+    border-radius: 10px;
+    transition: all 0.4854s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1618s; }
 
 .leaderboard__list {
   display: grid;

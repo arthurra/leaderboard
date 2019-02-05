@@ -37,6 +37,10 @@
   margin-bottom: 5rem;
   background-color: $near-white;
   box-shadow: $soft-box-shadow;
+
+  &--teams {
+    height: 588px;
+  }
 }
 
 .leaderboard__total {
@@ -78,8 +82,10 @@ progress {
   }
 
   &::-webkit-progress-value {
+    min-width: 20px;
     background-color: gold;
     border-radius: 10px;
+    transition: all ($golden-transition-duration * 3) $smooth-ease $golden-transition-duration;
   }
 }
 
