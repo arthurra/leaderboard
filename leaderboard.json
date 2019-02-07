@@ -39,10 +39,10 @@
 		{
 			"name": "Beau Heubach",
 			"leads": 2,
-			"posts": 1,
+			"posts": 2,
 			"talks": 0,
 			"team": "3",
-			"points": "12",
+			"points": "22",
 			"team[team]points": "12"
 		},
 		{
@@ -122,6 +122,22 @@
 			"posts": 0,
 			"talks": 0,
 			"points": "1"
+		},
+		{
+			"name": "Cam Carter",
+			"team": "3",
+			"leads": 0,
+			"posts": 2,
+			"talks": 2,
+			"points": "60"
+		},
+		{
+			"name": "James Smith",
+			"team": "3",
+			"leads": 0,
+			"posts": 0,
+			"talks": 1,
+			"points": "20"
 		}
 	],
 	"leaderboardTeamItem": [
