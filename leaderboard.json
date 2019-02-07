@@ -35,24 +35,6 @@
 			"points": "30"
 		},
 		{
-			"name": "Steve Loar",
-			"talks": 1,
-			"leads": 0,
-			"posts": 0,
-			"team": "4",
-			"points": "20",
-			"team[team]points": "20"
-		},
-		{
-			"name": "Tiko Nelson",
-			"leads": 4,
-			"posts": 1,
-			"talks": 0,
-			"team": "1",
-			"points": "14",
-			"team[team]points": "14"
-		},
-		{
 			"name": "Beau Heubach",
 			"leads": 2,
 			"posts": 2,
@@ -62,12 +44,30 @@
 			"team[team]points": "12"
 		},
 		{
+			"name": "Steve Loar",
+			"talks": 1,
+			"leads": 0,
+			"posts": 0,
+			"team": "4",
+			"points": "20",
+			"team[team]points": "20"
+		},
+		{
 			"name": "James Smith",
 			"team": "3",
 			"leads": 0,
 			"posts": 0,
 			"talks": 1,
 			"points": "20"
+		},
+		{
+			"name": "Tiko Nelson",
+			"leads": 4,
+			"posts": 1,
+			"talks": 0,
+			"team": "1",
+			"points": "14",
+			"team[team]points": "14"
 		},
 		{
 			"name": "Brandi Emerson",
