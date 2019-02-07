@@ -106,6 +106,14 @@
 			"posts": 0,
 			"talks": 1,
 			"points": "20"
+		},
+		{
+			"name": "Bill Barnett",
+			"team": "1",
+			"leads": 1,
+			"posts": 0,
+			"talks": 0,
+			"points": "1"
 		}
 	],
 	"leaderboardTeamItem": [
