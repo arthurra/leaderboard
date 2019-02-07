@@ -98,6 +98,14 @@
 			"team": "1",
 			"points": "1",
 			"team[team]points": "1"
+		},
+		{
+			"name": "Zack Kayser",
+			"team": "2",
+			"leads": 0,
+			"posts": 0,
+			"talks": 1,
+			"points": "20"
 		}
 	],
 	"leaderboardTeamItem": [
