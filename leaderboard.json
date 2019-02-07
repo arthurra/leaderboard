@@ -1,12 +1,20 @@
 {
 	"leaderboardItem": [
 		{
+			"name": "Cam Carter",
+			"team": "3",
+			"leads": 0,
+			"posts": 2,
+			"talks": 2,
+			"points": "60"
+		},
+		{
 			"name": " Kati Best ",
 			"leads": 1,
-			"posts": 1,
+			"posts": 2,
 			"talks": 1,
 			"team": "2",
-			"points": "31",
+			"points": "41",
 			"team[team]points": "31"
 		},
 		{
@@ -17,6 +25,14 @@
 			"team": "4",
 			"points": "30",
 			"team[team]points": "20"
+		},
+		{
+			"name": "Zack Kayser",
+			"team": "2",
+			"leads": 0,
+			"posts": 1,
+			"talks": 1,
+			"points": "30"
 		},
 		{
 			"name": "Steve Loar",
@@ -44,6 +60,14 @@
 			"team": "3",
 			"points": "22",
 			"team[team]points": "12"
+		},
+		{
+			"name": "James Smith",
+			"team": "3",
+			"leads": 0,
+			"posts": 0,
+			"talks": 1,
+			"points": "20"
 		},
 		{
 			"name": "Brandi Emerson",
@@ -100,14 +124,6 @@
 			"team[team]points": "1"
 		},
 		{
-			"name": "Zack Kayser",
-			"team": "2",
-			"leads": 0,
-			"posts": 1,
-			"talks": 1,
-			"points": "30"
-		},
-		{
 			"name": "Bill Barnett",
 			"team": "1",
 			"leads": 1,
@@ -122,22 +138,6 @@
 			"posts": 0,
 			"talks": 0,
 			"points": "1"
-		},
-		{
-			"name": "Cam Carter",
-			"team": "3",
-			"leads": 0,
-			"posts": 2,
-			"talks": 2,
-			"points": "60"
-		},
-		{
-			"name": "James Smith",
-			"team": "3",
-			"leads": 0,
-			"posts": 0,
-			"talks": 1,
-			"points": "20"
 		}
 	],
 	"leaderboardTeamItem": [
@@ -149,18 +149,18 @@
 			"teamPoints": "83"
 		},
 		{
+			"name": "Team 2 Electric Boogaloo",
+			"teamLeads": 5,
+			"teamPosts": 3,
+			"teamTalks": 2,
+			"teamPoints": "75"
+		},
+		{
 			"name": "Coiny McCoin Face",
 			"teamLeads": 10,
 			"teamPosts": 4,
 			"teamTalks": 1,
 			"teamPoints": "70"
-		},
-		{
-			"name": "Team 2 Electric Boogaloo",
-			"teamLeads": 5,
-			"teamPosts": 2,
-			"teamTalks": 2,
-			"teamPoints": "65"
 		},
 		{
 			"name": "A1 Sizzl-icious",
