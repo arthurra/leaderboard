@@ -103,13 +103,21 @@
 			"name": "Zack Kayser",
 			"team": "2",
 			"leads": 0,
-			"posts": 0,
+			"posts": 1,
 			"talks": 1,
-			"points": "20"
+			"points": "30"
 		},
 		{
 			"name": "Bill Barnett",
 			"team": "1",
+			"leads": 1,
+			"posts": 0,
+			"talks": 0,
+			"points": "1"
+		},
+		{
+			"name": "Scott Wiggins",
+			"team": "2",
 			"leads": 1,
 			"posts": 0,
 			"talks": 0,
