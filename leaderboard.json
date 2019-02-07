@@ -149,18 +149,18 @@
 			"teamPoints": "70"
 		},
 		{
-			"name": "Team 2 Electric Boogaloo",
-			"teamLeads": 5,
-			"teamPosts": 2,
-			"teamTalks": 2,
-			"teamPoints": "65"
-		},
-		{
 			"name": "Blingalls",
 			"teamLeads": 3,
 			"teamPosts": 4,
 			"teamTalks": 2,
 			"teamPoints": "83"
+		},
+		{
+			"name": "Team 2 Electric Boogaloo",
+			"teamLeads": 5,
+			"teamPosts": 2,
+			"teamTalks": 2,
+			"teamPoints": "65"
 		},
 		{
 			"name": "A1 Sizzl-icious",
