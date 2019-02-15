@@ -106,6 +106,14 @@
 			"team[team]points": "3"
 		},
 		{
+			"name": "Peter",
+			"team": "2",
+			"leads": 3,
+			"posts": 0,
+			"talks": 0,
+			"points": "3"
+		},
+		{
 			"name": "Alex Heflin",
 			"leads": 1,
 			"posts": 0,
@@ -146,14 +154,6 @@
 			"posts": 0,
 			"talks": 0,
 			"points": "1"
-		},
-		{
-			"name": "Peter",
-			"team": "2",
-			"leads": 3,
-			"posts": 0,
-			"talks": 0,
-			"points": "3"
 		}
 	],
 	"leaderboardTeamItem": [
