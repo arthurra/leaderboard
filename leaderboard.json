@@ -146,6 +146,14 @@
 			"posts": 0,
 			"talks": 0,
 			"points": "1"
+		},
+		{
+			"name": "Peter",
+			"team": "2",
+			"leads": 3,
+			"posts": 0,
+			"talks": 0,
+			"points": "3"
 		}
 	],
 	"leaderboardTeamItem": [
