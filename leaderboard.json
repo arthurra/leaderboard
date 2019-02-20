@@ -44,6 +44,15 @@
 			"team[team]points": "12"
 		},
 		{
+			"name": "Brandi Emerson",
+			"leads": 1,
+			"posts": 2,
+			"talks": 0,
+			"team": "3",
+			"points": "21",
+			"team[team]points": "11"
+		},
+		{
 			"name": "Steve Loar",
 			"talks": 1,
 			"leads": 0,
@@ -68,15 +77,6 @@
 			"team": "1",
 			"points": "14",
 			"team[team]points": "14"
-		},
-		{
-			"name": "Brandi Emerson",
-			"leads": 1,
-			"posts": 1,
-			"talks": 0,
-			"team": "3",
-			"points": "11",
-			"team[team]points": "11"
 		},
 		{
 			"name": "Super Chris",
