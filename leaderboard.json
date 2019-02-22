@@ -18,6 +18,14 @@
 			"team[team]points": "31"
 		},
 		{
+			"name": "Zack Kayser",
+			"team": "2",
+			"leads": 0,
+			"posts": 1,
+			"talks": 3,
+			"points": "70"
+		},
+		{
 			"name": "Lauren Lauzau",
 			"posts": 2,
 			"leads": 10,
@@ -25,14 +33,6 @@
 			"team": "4",
 			"points": "30",
 			"team[team]points": "20"
-		},
-		{
-			"name": "Zack Kayser",
-			"team": "2",
-			"leads": 0,
-			"posts": 1,
-			"talks": 3,
-			"points": "70"
 		},
 		{
 			"name": "Beau Heubach",
