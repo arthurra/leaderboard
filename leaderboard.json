@@ -97,6 +97,14 @@
 			"team[team]points": "10"
 		},
 		{
+			"name": "Dustin Kocher",
+			"team": "2",
+			"leads": 0,
+			"posts": 1,
+			"talks": 0,
+			"points": "10"
+		},
+		{
 			"name": "Ben McGrath",
 			"leads": 3,
 			"posts": 0,
@@ -154,14 +162,6 @@
 			"posts": 0,
 			"talks": 0,
 			"points": "1"
-		},
-		{
-			"name": "Dustin Kocher",
-			"team": "2",
-			"leads": 0,
-			"posts": 1,
-			"talks": 0,
-			"points": "10"
 		}
 	],
 	"leaderboardTeamItem": [
