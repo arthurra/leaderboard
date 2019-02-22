@@ -26,6 +26,15 @@
 			"points": "70"
 		},
 		{
+			"name": "Steve Loar",
+			"talks": 2,
+			"leads": 0,
+			"posts": 0,
+			"team": "4",
+			"points": "40",
+			"team[team]points": "20"
+		},
+		{
 			"name": "Lauren Lauzau",
 			"posts": 2,
 			"leads": 10,
@@ -38,9 +47,9 @@
 			"name": "Beau Heubach",
 			"leads": 2,
 			"posts": 2,
-			"talks": 0,
+			"talks": 1,
 			"team": "3",
-			"points": "22",
+			"points": "42",
 			"team[team]points": "12"
 		},
 		{
@@ -51,15 +60,6 @@
 			"team": "3",
 			"points": "21",
 			"team[team]points": "11"
-		},
-		{
-			"name": "Steve Loar",
-			"talks": 2,
-			"leads": 0,
-			"posts": 0,
-			"team": "4",
-			"points": "40",
-			"team[team]points": "20"
 		},
 		{
 			"name": "James Smith",
