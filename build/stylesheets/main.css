@@ -811,8 +811,9 @@ p {
   margin-bottom: 5rem;
   background-color: #FCFCFC;
   box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.5); }
-  .leaderboard--teams {
-    height: 588px; }
+  @media screen and (min-width: 786px) {
+    .leaderboard--teams {
+      height: 588px; } }
 
 .leaderboard__total {
   position: relative;

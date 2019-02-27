@@ -38,8 +38,10 @@
   background-color: $near-white;
   box-shadow: $soft-box-shadow;
 
-  &--teams {
-    height: 588px;
+  @media screen and (min-width: 786px) {
+    &--teams {
+      height: 588px;
+    }
   }
 }
 
