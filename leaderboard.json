@@ -9,6 +9,14 @@
 			"points": "160"
 		},
 		{
+			"name": "Zack Kayser",
+			"team": "2",
+			"leads": 0,
+			"posts": 1,
+			"talks": 4,
+			"points": "90"
+		},
+		{
 			"name": " Kati Best ",
 			"leads": 1,
 			"posts": 5,
@@ -16,14 +24,6 @@
 			"team": "2",
 			"points": "71",
 			"team[team]points": "31"
-		},
-		{
-			"name": "Zack Kayser",
-			"team": "2",
-			"leads": 0,
-			"posts": 1,
-			"talks": 3,
-			"points": "70"
 		},
 		{
 			"name": "Beau Heubach",
@@ -99,6 +99,14 @@
 		{
 			"name": "Dustin Kocher",
 			"team": "2",
+			"leads": 0,
+			"posts": 1,
+			"talks": 0,
+			"points": "10"
+		},
+		{
+			"name": "Katie Pohlman",
+			"team": "4",
 			"leads": 0,
 			"posts": 1,
 			"talks": 0,
