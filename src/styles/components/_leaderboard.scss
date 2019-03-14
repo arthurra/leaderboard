@@ -38,6 +38,13 @@
   background-color: $near-white;
   border-radius: $border-radius;
   box-shadow: $soft-box-shadow;
+
+  //  Fix for the empty data state on page load
+  @media screen and (min-width: 786px) {
+    &--teams {
+      min-height: 588px;
+    }
+  }
 }
 
 .leaderboard__total {
