@@ -70,6 +70,14 @@
 			"points": "20"
 		},
 		{
+			"name": "Danny Macovei",
+			"team": "1",
+			"leads": 0,
+			"posts": 0,
+			"talks": 1,
+			"points": "20"
+		},
+		{
 			"name": "Haley Moore",
 			"team": "1",
 			"leads": 15,
@@ -206,8 +214,8 @@
 			"name": "A1 Sizzl-icious",
 			"teamLeads": 23,
 			"teamPosts": 1,
-			"teamTalks": 0,
-			"teamPoints": "33"
+			"teamTalks": 1,
+			"teamPoints": "53"
 		}
 	]
 }
