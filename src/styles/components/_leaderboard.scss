@@ -7,7 +7,7 @@
 }
 
 .leaderboard--teams {
-  grid-template-columns: 1fr 2.618fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-areas: "total teams";
 
   .leaderboard__total {
@@ -36,13 +36,8 @@
 .leaderboard {
   margin-bottom: 5rem;
   background-color: $near-white;
+  border-radius: $border-radius;
   box-shadow: $soft-box-shadow;
-
-  @media screen and (min-width: 786px) {
-    &--teams {
-      height: 588px;
-    }
-  }
 }
 
 .leaderboard__total {
@@ -248,7 +243,7 @@ progress {
   }
 
   .form-group__input {
-    max-width: 4.5rem;
+    max-width: 4.75rem;
   }
 }
 
