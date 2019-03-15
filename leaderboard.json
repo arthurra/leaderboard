@@ -69,6 +69,14 @@
 			"team[team]points": "20"
 		},
 		{
+			"name": "James Smith",
+			"team": "3",
+			"leads": 3,
+			"posts": 0,
+			"talks": 1,
+			"points": "23"
+		},
+		{
 			"name": "Brandi Emerson",
 			"leads": 1,
 			"posts": 2,
@@ -76,14 +84,6 @@
 			"team": "3",
 			"points": "21",
 			"team[team]points": "11"
-		},
-		{
-			"name": "James Smith",
-			"team": "3",
-			"leads": 0,
-			"posts": 0,
-			"talks": 1,
-			"points": "20"
 		},
 		{
 			"name": "Danny Macovei",
