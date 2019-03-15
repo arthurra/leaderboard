@@ -153,6 +153,10 @@ progress {
   pointer-events: none;
   transition: all $transition-duration $smooth-ease;
 
+  svg {
+    pointer-events: none;
+  }
+
   [mv-mode="edit"] .leaderboard__item:hover & {
     opacity: 1;
     pointer-events: all;

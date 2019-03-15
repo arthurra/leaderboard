@@ -898,6 +898,8 @@ progress {
   opacity: 0;
   pointer-events: none;
   transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  .leaderboard__item-drag-handle svg {
+    pointer-events: none; }
   [mv-mode="edit"] .leaderboard__item:hover .leaderboard__item-drag-handle {
     opacity: 1;
     pointer-events: all; }
