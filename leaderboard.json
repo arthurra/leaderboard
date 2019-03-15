@@ -5,8 +5,17 @@
 			"team": "3",
 			"leads": 0,
 			"posts": 2,
-			"talks": 7,
-			"points": "160"
+			"talks": 8,
+			"points": "180"
+		},
+		{
+			"name": " Kati Best ",
+			"leads": 1,
+			"posts": 6,
+			"talks": 2,
+			"team": "2",
+			"points": "101",
+			"team[team]points": "31"
 		},
 		{
 			"name": "Zack Kayser",
@@ -17,22 +26,21 @@
 			"points": "90"
 		},
 		{
-			"name": " Kati Best ",
-			"leads": 1,
-			"posts": 5,
-			"talks": 1,
-			"team": "2",
-			"points": "71",
-			"team[team]points": "31"
-		},
-		{
 			"name": "Beau Heubach",
 			"leads": 2,
-			"posts": 2,
+			"posts": 3,
 			"talks": 1,
 			"team": "3",
-			"points": "42",
+			"points": "52",
 			"team[team]points": "12"
+		},
+		{
+			"name": "Katie Pohlman",
+			"team": "4",
+			"leads": 0,
+			"posts": 1,
+			"talks": 2,
+			"points": "50"
 		},
 		{
 			"name": "Steve Loar",
@@ -42,6 +50,14 @@
 			"team": "4",
 			"points": "40",
 			"team[team]points": "20"
+		},
+		{
+			"name": "Haley Moore",
+			"team": "1",
+			"leads": 15,
+			"posts": 0,
+			"talks": 1,
+			"points": "35"
 		},
 		{
 			"name": "Lauren Lauzau",
@@ -78,14 +94,6 @@
 			"points": "20"
 		},
 		{
-			"name": "Haley Moore",
-			"team": "1",
-			"leads": 15,
-			"posts": 0,
-			"talks": 0,
-			"points": "15"
-		},
-		{
 			"name": "Tiko Nelson",
 			"leads": 4,
 			"posts": 1,
@@ -115,14 +123,6 @@
 		{
 			"name": "Dustin Kocher",
 			"team": "2",
-			"leads": 0,
-			"posts": 1,
-			"talks": 0,
-			"points": "10"
-		},
-		{
-			"name": "Katie Pohlman",
-			"team": "4",
 			"leads": 0,
 			"posts": 1,
 			"talks": 0,
