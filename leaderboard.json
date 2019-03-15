@@ -198,24 +198,24 @@
 		},
 		{
 			"name": "Team 2 Electric Boogaloo",
-			"teamLeads": 5,
+			"teamLeads": 10,
 			"teamPosts": 7,
-			"teamTalks": 5,
-			"teamPoints": "175"
+			"teamTalks": 6,
+			"teamPoints": "200"
 		},
 		{
 			"name": "Coiny McCoin Face",
 			"teamLeads": 10,
 			"teamPosts": 5,
-			"teamTalks": 2,
-			"teamPoints": "100"
+			"teamTalks": 4,
+			"teamPoints": "140"
 		},
 		{
 			"name": "A1 Sizzl-icious",
 			"teamLeads": 23,
 			"teamPosts": 1,
-			"teamTalks": 1,
-			"teamPoints": "53"
+			"teamTalks": 2,
+			"teamPoints": "73"
 		}
 	]
 }
