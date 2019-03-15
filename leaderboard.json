@@ -186,6 +186,22 @@
 			"posts": 0,
 			"talks": 0,
 			"points": "1"
+		},
+		{
+			"name": "Doug Alcorn",
+			"team": "1",
+			"leads": 7,
+			"posts": 0,
+			"talks": 0,
+			"points": "7"
+		},
+		{
+			"name": "Tim Mecklem",
+			"team": "2",
+			"leads": 6,
+			"posts": 0,
+			"talks": 0,
+			"points": "6"
 		}
 	],
 	"leaderboardTeamItem": [
