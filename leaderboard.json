@@ -222,16 +222,16 @@
 		{
 			"name": "Coiny McCoin Face",
 			"teamLeads": 10,
-			"teamPosts": 5,
+			"teamPosts": 6,
 			"teamTalks": 4,
-			"teamPoints": "140"
+			"teamPoints": "150"
 		},
 		{
 			"name": "A1 Sizzl-icious",
 			"teamLeads": 30,
 			"teamPosts": 1,
-			"teamTalks": 2,
-			"teamPoints": "80"
+			"teamTalks": 3,
+			"teamPoints": "100"
 		}
 	]
 }
